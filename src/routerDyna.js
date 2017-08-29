@@ -11,7 +11,7 @@ const Routers = function ({ history, app }) {
       breadcrumbName: '首页',
       getIndexRoute (nextState, cb) {
         require.ensure([], require => {
-          cb(null, { component: require('./components/Dashboard/Dashboard1') })
+          cb(null, { component: require('./components/Dashboard/Dashboard1').default })
         }, 'app')
       },
       childRoutes: [
