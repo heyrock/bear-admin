@@ -5,7 +5,7 @@ build upon create-react-app, reactjs, ant design, dva.js, webpack etc
 
 ## [live demo](http://huzzbuzz.coding.me/bear-admin/)
 
-Bear Admin，一个 JavaScript 应用，项目由业界最优秀的 React 应用开发工具 create-react-app 初始化创建， 搭配 Antd 开箱即用的高质量 React 组件和轻量级应用框架 Dva.js 一起，可服务于企业后台产品。
+Bear Admin，一个 JavaScript 应用，项目由业界最优秀的 React 应用开发工具 create-react-app 初始化创建， 搭配 Antd 开箱即用的高质量 React 组件和轻量级应用框架 Dva.js 一起，*非常适合后台产品*。
 
 Bear Admin 同时也是个很好的前端脚手架学习示例，如果你在学习 React 或即将学习 React，它应该可以做为教程给你一些帮助。如果你准备使用 React 全家桶开发应用，它能够快速给你提供项目脚手架，为你节省前期部分工作。 让我们一起享受整个 React 生态圈和工具链带来的愉悦开发体验。
 
