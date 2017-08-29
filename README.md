@@ -1,5 +1,9 @@
 ![](https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/logo-bear-black.jpg)                   
 
+[![DUB](https://img.shields.io/dub/l/vibe-d.svg)]()
+![](https://img.shields.io/badge/language-javascript-orange.svg)
+[![](https://travis-ci.org/huzzbuzz/bear-admin.svg?branch=master)](https://travis-ci.org/huzzbuzz/bear-admin)
+
 > build upon create-react-app, reactjs, ant design, dva.js, webpack etc
 
 ## [live demo](http://huzzbuzz.coding.me/bear-admin/)
