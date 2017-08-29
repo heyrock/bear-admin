@@ -1,8 +1,6 @@
 ![](https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/logo-bear-black.jpg)                   
 
-> 为什么叫 bear-admin？因为自己本身很喜欢动物      
-
-build upon create-react-app, reactjs, ant design, dva.js, webpack etc
+> build upon create-react-app, reactjs, ant design, dva.js, webpack etc
 
 ## [live demo](http://huzzbuzz.coding.me/bear-admin/)
 
@@ -76,7 +74,7 @@ antd 全家桶
 
 :heartbeat::heartbeat: 欢迎 star 和 watch 支持 :heartbeat::heartbeat: 
 
-#### 截图       
+<hr />     
 
 #### 顶部菜单
 ![1](https://user-images.githubusercontent.com/16314691/29705003-bbcbd414-89ae-11e7-82df-1acd2a998324.jpg)
