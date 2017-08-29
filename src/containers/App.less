@@ -1,0 +1,167 @@
+/* Layout Left CSS*/
+.layout-left {
+
+  .leftSider {
+    color: #999;
+    width: 200px;
+    position: absolute !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: 100vh !important;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.01) !important;
+
+    :global {
+      .ant-menu-inline, .ant-menu-vertical {
+        border-right: 0 !important;
+      }
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent !important;
+    }
+  }
+
+  .leftSiderLogo {
+    height: 40px !important;
+    text-align: center !important;
+    line-height: 40px !important;
+    cursor: pointer;
+    margin: 28px 0 !important;
+    overflow: hidden !important;
+    transition: all 2.3s ease-out;
+
+    img {
+      width: 40px;
+      transition: all 0.3s ease-out !important;
+    }
+
+    span {
+      vertical-align: text-bottom;
+      font-size: 16px;
+      padding-left: 8px;
+      text-transform: uppercase;
+
+      .action {
+        transition: all 2.3s ease-out !important;
+      }
+    }
+  }
+
+  .leftSiderLogoMini {
+    img {
+      width: 35px !important;
+    }
+  }
+
+  .leftSiderFold {
+    overflow: visible !important;
+  }
+
+  .leftSiderWhite {
+    background: #fff !important;
+  }
+
+  .leftHeader {
+    background: transparent !important;
+    padding: 0 !important;
+    height: 50px !important;
+    line-height: 50px !important;
+
+    .btnBars {
+      float: left !important;
+      height: 35px !important;
+      width: 35px !important;
+      font-size: 16px !important;
+      transition: all .3s ease-out;
+      border-radius: 20%;
+      padding: 0px 3px 0 14px !important;
+      color: #999 !important;
+      background: #fff !important;
+      cursor: pointer;
+      margin: 5px;
+
+      i {
+        position: relative !important;
+        top: -7px !important;
+        left: -4px !important;
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: #000 !important;
+        box-shadow: 0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2) !important;
+      }
+    }
+
+    .rightMenu {
+      float: right;
+      background: transparent !important;
+    }
+  }
+
+}
+
+/* Common Footer CSS*/
+.common-footer {
+  text-align: center;
+  background: #fff !important;
+  height: 48px;
+  line-height: 48px;
+  font-size: 12px;
+  color: #999 !important;
+  box-shadow: 4px 4px 40px 0 rgba(0,0,0,.05) !important;
+}
+
+/* Layout Top CSS*/
+.layout-top {
+  overflow: auto;
+  height: 100vh !important;
+  transition: all .3s cubic-bezier(.215,.61,.355,1);
+
+  .topLogo {
+    color: #999;
+    height: 31px;
+    margin: 0 24px 0;
+    float: left;
+    cursor: pointer;
+
+    img {
+      width: 40px;
+      margin-right: 8px;
+      position: relative;
+      top: -9px;
+    }
+
+    span {
+      vertical-align: text-bottom;
+      font-size: 16px;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+  }
+
+  .topHeaderWhite {
+    background: #ffffff !important;
+  }
+
+  .topRightMenu {
+    float: right !important;
+  }
+}
+
+/* Popver Menu CSS*/
+.responsMenu {
+  width: 200px;
+  margin-left: 6px;
+  padding: 0;
+
+  :global {
+    .ant-popover-inner-content {
+      padding: 8px !important;
+    }
+
+    .ant-menu-inline, .ant-menu-vertical {
+      border-right: 0 !important;
+    }
+  }
+}

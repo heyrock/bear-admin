@@ -1,0 +1,83 @@
+.card {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin: -160px 0 0 -260px;
+  width: 520px;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  color: rgba(0,0,0, 0.87);
+  background: #fff;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+
+  button {
+    width: 168px;
+    margin-top: 20px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  input {
+    margin-top: 10px;
+    height: 40px;
+    background: 0 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 2px;
+  }
+
+  p {
+    color: rgb(204, 204, 204);
+    text-align: center;
+    margin-top: 16px;
+
+    span {
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.logo {
+  position: relative;
+  overflow: hidden;
+  top: -60px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  background: linear-gradient(160deg, #108ee9, #d81b60);
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  span {
+    color: #fff;
+    vertical-align: text-bottom;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 5px;
+  }
+}
+
+.background {
+  height: 100%;
+  background-size: cover;
+  filter: brightness(40%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}

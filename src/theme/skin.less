@@ -1,0 +1,117 @@
+@import './antMotion.less';
+@import './demo.less';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e6e6e6;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+// 自定义皮肤
+.showcase {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  :global {
+    .ant-card {
+      border-radius: 6px;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    }
+    .ant-card-head {
+      border-bottom: 0;
+    }
+    .ant-card-head-title{
+      overflow: visible !important;
+    }
+    [id^=components-grid-demo-] .ant-row>div:not(.gutter-row):nth-child(odd) {
+      text-align: center;
+      background: rgba(0,160,233,.7) !important;
+    }
+    [id^=components-grid-demo-] .ant-row>div:not(.gutter-row) {
+      text-align: center;
+      background: #00a0e9;
+      margin: 6px 0;
+      padding: 6px 0;
+    }
+
+    .gutter-example .ant-row > div {
+      background: transparent;
+      border: 0;
+    }
+    .gutter-box {
+      text-align: center;
+      background: #00A0E9;
+      padding: 5px 0;
+    }
+
+    p {
+      font-size: 15px;
+      color: #999;
+    }
+    [id^=components-grid-demo-] .ant-row-flex>div:not(.gutter-row):nth-child(odd) {
+      text-align: center;
+      background: rgba(0,160,233,.7) !important;
+    }
+    [id^=components-grid-demo-] .ant-row-flex>div:not(.gutter-row) {
+      text-align: center;
+      background: #00a0e9;
+      margin: 6px 0;
+      padding: 6px 0;
+    }
+
+    #components-grid-demo-playground [class^="ant-col-"] {
+      background: transparent;
+      border: 0;
+    }
+    #components-grid-demo-playground [class^="ant-col-"] > div {
+      background: #00A0E9;
+      height: 120px;
+      line-height: 120px;
+      font-size: 13px;
+    }
+    #components-grid-demo-playground pre {
+      background: #f9f9f9;
+      border-radius: 6px;
+      font-size: 13px;
+      padding: 8px 16px;
+    }
+  }
+
+  .card-header {
+    color: #FFFFFF;
+    border-radius: 3px;
+    position: relative;
+    top: -20px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    min-width: 90px;
+
+    &.yellow {
+      background: linear-gradient(60deg, #ffa726, #fb8c00);
+      box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
+    }
+
+    &.pink {
+      background: linear-gradient(60deg, #ec407a, #d81b60);
+      box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4);
+    }
+
+    &.green {
+      background: linear-gradient(60deg, #66bb6a, #43a047);
+      box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4);
+    }
+
+    h4 {
+      color: #FFFFFF;
+      padding: 15px;
+    }
+  }
+}
