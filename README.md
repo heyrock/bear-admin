@@ -1,3 +1,4 @@
+![](https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/logo-bear-black.png)   
 # bear-admin          
 
 build upon create-react-app, reactjs, ant design, dva.js, webpack etc
