@@ -29,7 +29,7 @@ Bear Admin 同时也是个很好的前端脚手架学习示例，如果你在学
  :yum:Code Splitting        
  :yum:高质量脚手架        
  :yum:eject create-react-app 配置，按需定制        
- :yum:支持更多语言特性和 polyfills，请访问 [create-react-app](https://github.com/facebookincubator/create-react-app) 官网
+ :yum:支持更多语言特性和 polyfills，发现更多，请访问 [create-react-app](https://github.com/facebookincubator/create-react-app) 官网
 
 #### 开始
 1. 克隆源码       
