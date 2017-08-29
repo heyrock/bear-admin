@@ -6,4 +6,4 @@ node_js:
   - "6"
 
 script:
-  - npm run analyze
+  - npm run build
