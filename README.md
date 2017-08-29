@@ -1,6 +1,8 @@
 ![](https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/logo-bear-black.png)   
 # bear-admin          
 
+> 为什么叫 bear-admin，因为喜欢动物      
+
 build upon create-react-app, reactjs, ant design, dva.js, webpack etc
 
 ## [live demo](http://huzzbuzz.coding.me/bear-admin/)
