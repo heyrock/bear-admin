@@ -103,7 +103,7 @@ export default {
         number:4324,
       }
     ],
-    salescard: [{"name":2008,"Clothes":214,"Food":354,"Electronics":416},{"name":2009,"Clothes":395,"Food":192,"Electronics":390},{"name":2010,"Clothes":260,"Food":269,"Electronics":404},{"name":2011,"Clothes":323,"Food":297,"Electronics":449},{"name":2012,"Clothes":215,"Food":220,"Electronics":491},{"name":2013,"Clothes":365,"Food":341,"Electronics":422},{"name":2014,"Clothes":218,"Food":187,"Electronics":349},{"name":2015,"Clothes":248,"Food":217,"Electronics":431}],
+    salescard: [{"name":2008,"卫衣":214,"T恤":354,"衬衫":416},{"name":2009,"卫衣":395,"T恤":192,"衬衫":390},{"name":2010,"卫衣":260,"T恤":269,"衬衫":404},{"name":2011,"卫衣":323,"T恤":297,"衬衫":449},{"name":2012,"卫衣":215,"T恤":220,"衬衫":491},{"name":2013,"卫衣":365,"T恤":341,"衬衫":422},{"name":2014,"卫衣":218,"T恤":187,"衬衫":349},{"name":2015,"卫衣":248,"T恤":217,"衬衫":431}],
     chartscard: {
       sdoption: {
         title: {
