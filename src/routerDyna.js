@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Router } from 'dva/router';
+import { Router, hashHistory } from 'dva/router';
 import App from './containers/App';
 
 const Routers = function ({ history, app }) {
@@ -555,7 +555,7 @@ const Routers = function ({ history, app }) {
     },
   ]
 
-  return <Router history={history} routes={routes} />
+  return <Router history={hashHistory} routes={routes} />
 }
 
 Routers.propTypes = {

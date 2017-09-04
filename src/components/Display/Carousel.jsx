@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, Carousel, Button } from 'antd';
+import { Card, Row, Col, Carousel } from 'antd';
 
 class CarouselDemo extends React.Component {
 

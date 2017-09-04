@@ -72,7 +72,7 @@ const Profile = () => {
         <Col xl={7} lg={7} md={7} sm={7} xs={24}>
           <div className="profile">
             <div className="header">
-              <img src={profileImg} title="avatar" />
+              <img alt="avatar" src={profileImg} title="avatar" />
             </div>
             <div className="profileInfo">
               <h1>Marion Fleming</h1>

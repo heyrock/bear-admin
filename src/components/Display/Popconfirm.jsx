@@ -24,14 +24,14 @@ class PopconfirmDemo extends React.Component {
           <Col span={12}>
             <Card noHovering title="基本">
               <Popconfirm title="确认删除吗?" onConfirm={this.confirm} onCancel={this.cancel} okText="是" cancelText="否">
-                <a href="#">删除</a>
+                <a>删除</a>
               </Popconfirm>
             </Card>
           </Col>
           <Col span={12}>
             <Card noHovering title="国际化">
               <Popconfirm title="Are you sure？" okText="Yes" cancelText="No">
-                <a href="#">Delete</a>
+                <a>Delete</a>
               </Popconfirm>
             </Card>
           </Col>

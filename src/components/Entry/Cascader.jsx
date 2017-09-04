@@ -152,7 +152,7 @@ class Demo1 extends React.Component {
         {this.state.text}
         &nbsp;&nbsp;
         <Cascader options={options} onChange={this.onChange}>
-          <a href="#">选择城市</a>
+          <a>选择城市</a>
         </Cascader>
       </span>
     );

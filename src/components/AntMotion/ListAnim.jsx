@@ -143,7 +143,7 @@ class ListAnimDemo extends React.Component {
           style={this.state.style[key]}
         >
           <div className={`${this.props.className}-img`}>
-            <img src={img} width="44" height="44" onDragStart={e => e.preventDefault()} />
+            <img alt="img" src={img} width="44" height="44" onDragStart={e => e.preventDefault()} />
           </div>
           <p>{text}</p>
         </TweenOne>

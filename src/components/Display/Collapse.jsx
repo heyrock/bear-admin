@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, Collapse, Button } from 'antd';
+import { Card, Row, Col, Collapse } from 'antd';
 const Panel = Collapse.Panel;
 
 const text = `

@@ -587,17 +587,5 @@ class Demo5 extends React.Component {
 }
 const Demo5Form = Form.create()(Demo5);
 
-class dd extends React.Component {
-
-  render() {
-
-    return (
-      <div>
-
-      </div >
-    )
-  }
-}
-
 
 export default BaseFormDemo;

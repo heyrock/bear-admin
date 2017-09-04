@@ -331,10 +331,10 @@ class Demo4 extends React.Component {
       dataIndex: 'name',
       render: (text, row, index) => {
         if (index < 4) {
-          return <a href="#">{text}</a>;
+          return <a>{text}</a>;
         }
         return {
-          children: <a href="#">{text}</a>,
+          children: <a>{text}</a>,
           props: {
             colSpan: 5,
           },
@@ -436,7 +436,7 @@ class Demo5 extends React.Component {
         key: 'operation',
         fixed: 'right',
         width: 100,
-        render: () => <a href="#">action</a>,
+        render: () => <a>action</a>,
       },
     ];
 
@@ -475,7 +475,7 @@ class Demo6 extends React.Component {
         key: 'operation',
         fixed: 'right',
         width: 100,
-        render: () => <a href="#">action</a>,
+        render: () => <a>action</a>,
       },
     ];
 
@@ -599,10 +599,10 @@ class Demo8 extends React.Component {
         key: 'operation',
         render: () => (
           <span className={'table-operation'}>
-            <a href="#">Pause</a>
-            <a href="#">Stop</a>
+            <a>Pause</a>
+            <a>Stop</a>
             <Dropdown overlay={menu}>
-              <a href="#">
+              <a>
                 More <Icon type="down" />
               </a>
             </Dropdown>
@@ -638,7 +638,7 @@ class Demo8 extends React.Component {
       { title: 'Upgraded', dataIndex: 'upgradeNum', key: 'upgradeNum' },
       { title: 'Creator', dataIndex: 'creator', key: 'creator' },
       { title: 'Date', dataIndex: 'createdAt', key: 'createdAt' },
-      { title: 'Action', key: 'operation', render: () => <a href="#">Publish</a> },
+      { title: 'Action', key: 'operation', render: () => <a>Publish</a> },
     ];
 
     const data = [];

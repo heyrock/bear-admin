@@ -30,7 +30,7 @@ class DropdownDemo extends React.Component {
                   <a target="_blank" rel="noopener noreferrer" href="http://github.com/huzzbuzz">3d menu item</a>
                 </Menu.Item>
               </Menu>}>
-                <a className="ant-dropdown-link" href="#">
+                <a className="ant-dropdown-link">
                   Hover me <Icon type="down" />
                 </a>
               </Dropdown>
@@ -48,7 +48,7 @@ class DropdownDemo extends React.Component {
                 <Menu.Divider />
                 <Menu.Item key="3" disabled>3d menu item（disabled）</Menu.Item>
               </Menu>}>
-                <a className="ant-dropdown-link" href="#">
+                <a className="ant-dropdown-link" >
                   Hover me <Icon type="down" />
                 </a>
               </Dropdown>
@@ -68,7 +68,7 @@ class DropdownDemo extends React.Component {
                   <Menu.Item>6th menu item</Menu.Item>
                 </SubMenu>
               </Menu>}>
-                <a className="ant-dropdown-link" href="#">
+                <a className="ant-dropdown-link" >
                   Cascading menu <Icon type="down" />
                 </a>
               </Dropdown>
@@ -88,7 +88,7 @@ class DropdownDemo extends React.Component {
                 <Menu.Divider />
                 <Menu.Item key="3">3d menu item</Menu.Item>
               </Menu>} trigger={['click']}>
-                <a className="ant-dropdown-link" href="#">
+                <a className="ant-dropdown-link" >
                   Click me <Icon type="down" />
                 </a>
               </Dropdown>

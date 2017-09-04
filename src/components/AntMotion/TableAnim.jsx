@@ -141,10 +141,10 @@ class TableAnim extends React.Component {
           <div className={`${this.props.className}-nav`}>
             <span>
               <img
-                height="24" src="https://zos.alipayobjects.com/rmsportal/TOXWfHIUGHvZIyb.svg"
+                alt="img" height="24" src="https://zos.alipayobjects.com/rmsportal/TOXWfHIUGHvZIyb.svg"
               />
               <img
-                height="14" src="https://zos.alipayobjects.com/rmsportal/bNfCyCcgnyTgRmz.svg"
+                alt="img" height="14" src="https://zos.alipayobjects.com/rmsportal/bNfCyCcgnyTgRmz.svg"
               />
             </span>
           </div>

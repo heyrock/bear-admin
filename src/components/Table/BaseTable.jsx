@@ -40,7 +40,7 @@ class Demo1 extends React.Component {
       title: 'Name',
       dataIndex: 'name',
       key: 'name',
-      render: text => <a href="#">{text}</a>,
+      render: text => <a>{text}</a>,
     }, {
       title: 'Age',
       dataIndex: 'age',
@@ -54,11 +54,11 @@ class Demo1 extends React.Component {
       key: 'action',
       render: (text, record) => (
         <span>
-          <a href="#">Action 一 {record.name}</a>
+          <a>Action 一 {record.name}</a>
           <span className="ant-divider" />
-          <a href="#">Delete</a>
+          <a>Delete</a>
           <span className="ant-divider" />
-          <a href="#" className="ant-dropdown-link">
+          <a className="ant-dropdown-link">
             More actions <Icon type="down" />
           </a>
         </span>
@@ -93,7 +93,7 @@ class Demo2 extends React.Component {
     const columns = [{
       title: 'Name',
       dataIndex: 'name',
-      render: text => <a href="#">{text}</a>,
+      render: text => <a>{text}</a>,
     }, {
       title: 'Age',
       dataIndex: 'age',

@@ -280,18 +280,21 @@ class Edit extends React.Component {
             <RadioGroup onChange={this.onChangeRadio} defaultValue="a">
               <Radio value="a">
                 <img
+                  alt="img"
                   src={this.defaultImage.a}
                   height="30"
                 />
               </Radio>
               <Radio value="b">
                 <img
+                  alt="img"
                   src={this.defaultImage.b}
                   height="30"
                 />
               </Radio>
               <Radio value="c">
                 <img
+                  alt="img"
                   src={this.defaultImage.c}
                   height="30"
                 />

@@ -40,7 +40,7 @@ class TimelineDemo extends React.Component {
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
             <Card noHovering title="最后一个">
-              <Timeline pending={<a href="#">See more</a>}>
+              <Timeline pending={<a>See more</a>}>
                 <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
                 <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
                 <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>

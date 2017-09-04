@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, Alert, Button } from 'antd';
+import { Card, Row, Col, Alert } from 'antd';
 
 class AlertDemo extends React.Component {
 

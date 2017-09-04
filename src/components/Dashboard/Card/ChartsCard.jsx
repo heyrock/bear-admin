@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'dva';
 import { Row, Col, Card, message } from 'antd';
 import ReactEcharts from 'echarts-for-react';
 import * as airportConfig from './airportConfig';
@@ -46,7 +45,7 @@ class ChartsCard extends React.Component {
                 onEvents={onEvents}
                 style={reStyle} />
             </Card>
-          </Col>          
+          </Col>
         </Row>
         <Row style={{ marginTop: 20 }}>
             <Col>
@@ -58,8 +57,8 @@ class ChartsCard extends React.Component {
                 style={{height: '600px', width: '100%'}} />
             </Card>
             </Col>
-        </Row>     
-        </div>   
+        </Row>
+        </div>
     );
   }
 }

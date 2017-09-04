@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, Pagination, Button } from 'antd';
+import { Card, Row, Col, Pagination } from 'antd';
 
 class PaginationDemo extends React.Component {
   state = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, Tree, Button } from 'antd';
+import { Card, Row, Col, Tree } from 'antd';
 const TreeNode = Tree.TreeNode;
 
 class TreeDemo extends React.Component {

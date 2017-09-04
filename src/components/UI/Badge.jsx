@@ -39,33 +39,33 @@ class BadgeDemo extends React.Component {
           <Col span={8}>
             <Card noHovering title="基本">
               <Badge count={5}>
-                <a href="#" style={head_example} />
+                <span style={head_example}></span>
               </Badge>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <Badge count={0} showZero>
-                <a href="#" style={head_example} />
+                <span style={head_example}></span>
               </Badge>
             </Card>
           </Col>
           <Col span={8}>
             <Card noHovering title="封顶数字">
               <Badge count={99}>
-                <a href="#" style={head_example} />
+                <span style={head_example}></span>
               </Badge>&nbsp;&nbsp;&nbsp;&nbsp;
               <Badge count={100}>
-                <a href="#" style={head_example} />
+                <span style={head_example}></span>
               </Badge>&nbsp;&nbsp;&nbsp;&nbsp;
               <Badge count={99} overflowCount={10}>
-                <a href="#" style={head_example} />
+                <span style={head_example}></span>
               </Badge>&nbsp;&nbsp;&nbsp;&nbsp;
               <Badge count={1000} overflowCount={999}>
-                <a href="#" style={head_example} />
+                <span style={head_example}></span>
               </Badge>
             </Card>
           </Col>
           <Col span={8}>
             <Card noHovering title="可点击">
-              <a href="#">
+              <a>
                 <Badge count={5}>
                   <span style={head_example} />
                 </Badge>
@@ -90,7 +90,7 @@ class BadgeDemo extends React.Component {
               </Badge>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <Badge dot>
-                <a href="#">Link something</a>
+                <a>Link something</a>
               </Badge>
             </Card>
           </Col>
@@ -98,7 +98,7 @@ class BadgeDemo extends React.Component {
             <Card noHovering title="动态">
               <div>
                 <Badge count={this.state.count}>
-                  <a href="#" style={head_example} />
+                  <span style={head_example}></span>
                 </Badge>
                 &nbsp;&nbsp;&nbsp;
                 <ButtonGroup>
@@ -112,7 +112,7 @@ class BadgeDemo extends React.Component {
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <Badge dot={this.state.show}>
-                  <a href="#" style={head_example} />
+                  <span style={head_example}></span>
                 </Badge>
                 &nbsp;&nbsp;&nbsp;
                 <Switch onChange={this.onChange} checked={this.state.show} />
