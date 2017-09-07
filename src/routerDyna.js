@@ -11,7 +11,7 @@ const Routers = function ({ history, app }) {
       breadcrumbName: '首页',
       getIndexRoute (nextState, cb) {
         require.ensure([], require => {
-          cb(null, { component: require('./components/Dashboard/Dashboard1').default })
+          cb(null, { component: require('./components/Dashboard/Dashboard1') })
         }, 'app')
       },
       childRoutes: [
@@ -20,7 +20,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '仪表盘1',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Dashboard/Dashboard1').default)
+              cb(null, require('./components/Dashboard/Dashboard1'))
             }, 'dashboard1')
           },
         }, {
@@ -28,7 +28,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '仪表盘2',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Dashboard/Dashboard2').default)
+              cb(null, require('./components/Dashboard/Dashboard2'))
             }, 'dashboard2')
           },
         }, {
@@ -36,7 +36,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '邮箱',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Mail/Mail').default)
+              cb(null, require('./components/Mail/Mail'))
             }, 'mail')
           },
         }, {
@@ -44,7 +44,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '资料',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Pages/Profile').default)
+              cb(null, require('./components/Pages/Profile'))
             }, 'profile')
           },
         }, {
@@ -52,7 +52,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '固钉',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Navigation/Affix').default)
+              cb(null, require('./components/Navigation/Affix'))
             }, 'affix')
           },
         }, {
@@ -60,7 +60,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '分页',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Navigation/Pagination').default)
+              cb(null, require('./components/Navigation/Pagination'))
             }, 'pagination')
           },
         }, {
@@ -68,7 +68,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '面包屑',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Navigation/Breadcrumb').default)
+              cb(null, require('./components/Navigation/Breadcrumb'))
             }, 'breadcrumb')
           },
         }, {
@@ -76,7 +76,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '步骤条',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Navigation/Steps').default)
+              cb(null, require('./components/Navigation/Steps'))
             }, 'steps')
           },
         }, {
@@ -84,7 +84,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '头像',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Avatar').default)
+              cb(null, require('./components/UI/Avatar'))
             }, 'avatar')
           },
         }, {
@@ -92,7 +92,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '按钮',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Button').default)
+              cb(null, require('./components/UI/Button'))
             }, 'button')
           },
         }, {
@@ -100,7 +100,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '图标',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Icon').default)
+              cb(null, require('./components/UI/Icon'))
             }, 'icon')
           },
         }, {
@@ -108,7 +108,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '标签',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Tag').default)
+              cb(null, require('./components/UI/Tag'))
             }, 'tag')
           },
         }, {
@@ -116,7 +116,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '开关',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Switch').default)
+              cb(null, require('./components/UI/Switch'))
             }, 'switch')
           },
         }, {
@@ -124,7 +124,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '日历',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Calendar').default)
+              cb(null, require('./components/UI/Calendar'))
             }, 'calendar')
           },
         }, {
@@ -132,7 +132,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '多选框',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Checkbox').default)
+              cb(null, require('./components/UI/Checkbox'))
             }, 'checkbox')
           },
         }, {
@@ -140,7 +140,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '单选框',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Radio').default)
+              cb(null, require('./components/UI/Radio'))
             }, 'radio')
           },
         }, {
@@ -148,7 +148,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '输入框',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Input').default)
+              cb(null, require('./components/UI/Input'))
             }, 'input')
           },
         }, {
@@ -156,7 +156,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '时间轴',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Timeline').default)
+              cb(null, require('./components/UI/Timeline'))
             }, 'timeline')
           },
         }, {
@@ -164,7 +164,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '徽标数',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Badge').default)
+              cb(null, require('./components/UI/Badge'))
             }, 'badge')
           },
         }, {
@@ -172,7 +172,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '滑动输入条',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/UI/Slider').default)
+              cb(null, require('./components/UI/Slider'))
             }, 'slider')
           },
         }, {
@@ -180,7 +180,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '气泡确认框',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Popconfirm').default)
+              cb(null, require('./components/Display/Popconfirm'))
             }, 'popconfirm')
           },
         }, {
@@ -188,7 +188,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '气泡卡片',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Popover').default)
+              cb(null, require('./components/Display/Popover'))
             }, 'popover')
           },
         }, {
@@ -196,7 +196,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '气泡确认框',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Notification').default)
+              cb(null, require('./components/Display/Notification'))
             }, 'notification')
           },
         }, {
@@ -204,7 +204,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '全局提示',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Message').default)
+              cb(null, require('./components/Display/Message'))
             }, 'message')
           },
         }, {
@@ -212,7 +212,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '警告提示',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Alert').default)
+              cb(null, require('./components/Display/Alert'))
             }, 'alert')
           },
         }, {
@@ -220,7 +220,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '文字提示',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Tooltip').default)
+              cb(null, require('./components/Display/Tooltip'))
             }, 'tooltip')
           },
         }, {
@@ -228,7 +228,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '折叠面板',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Collapse').default)
+              cb(null, require('./components/Display/Collapse'))
             }, 'collapse')
           },
         }, {
@@ -236,7 +236,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '树形控件',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Tree').default)
+              cb(null, require('./components/Display/Tree'))
             }, 'tree')
           },
         }, {
@@ -244,7 +244,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '树选择',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/TreeSelect').default)
+              cb(null, require('./components/Display/TreeSelect'))
             }, 'treeselect')
           },
         }, {
@@ -252,7 +252,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '对话框',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Modal').default)
+              cb(null, require('./components/Display/Modal'))
             }, 'modal')
           },
         }, {
@@ -260,7 +260,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '标签页',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Tabs').default)
+              cb(null, require('./components/Display/Tabs'))
             }, 'tabs')
           },
         }, {
@@ -268,7 +268,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '走马灯',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Carousel').default)
+              cb(null, require('./components/Display/Carousel'))
             }, 'carousel')
           },
         }, {
@@ -276,7 +276,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '进度条',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Display/Progress').default)
+              cb(null, require('./components/Display/Progress'))
             }, 'progress')
           },
         }, {
@@ -284,7 +284,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '提及',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Entry/Mention').default)
+              cb(null, require('./components/Entry/Mention'))
             }, 'mention')
           },
         }, {
@@ -292,7 +292,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '评分',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Entry/Rate').default)
+              cb(null, require('./components/Entry/Rate'))
             }, 'rate')
           },
         }, {
@@ -300,7 +300,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '选择器',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Entry/Select').default)
+              cb(null, require('./components/Entry/Select'))
             }, 'select')
           },
         }, {
@@ -308,7 +308,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '穿梭框',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Entry/Transfer').default)
+              cb(null, require('./components/Entry/Transfer'))
             }, 'transfer')
           },
         }, {
@@ -316,7 +316,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '下拉菜单',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Entry/Dropdown').default)
+              cb(null, require('./components/Entry/Dropdown'))
             }, 'dropdown')
           },
         }, {
@@ -324,7 +324,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '自动完成',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Entry/AutoComplete').default)
+              cb(null, require('./components/Entry/AutoComplete'))
             }, 'autocomplete')
           },
         }, {
@@ -332,7 +332,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '级联选择',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Entry/Cascader').default)
+              cb(null, require('./components/Entry/Cascader'))
             }, 'cascader')
           },
         }, {
@@ -340,7 +340,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '日期选择框',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Entry/DatePicker').default)
+              cb(null, require('./components/Entry/DatePicker'))
             }, 'datepicker')
           },
         }, {
@@ -348,7 +348,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '时间选择框',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Entry/TimePicker').default)
+              cb(null, require('./components/Entry/TimePicker'))
             }, 'timepicker')
           },
         }, {
@@ -356,7 +356,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '基本表单',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Form/BaseForm').default)
+              cb(null, require('./components/Form/BaseForm'))
             }, 'baseform')
           },
         }, {
@@ -364,7 +364,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '高级表单',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Form/AdvancedForm').default)
+              cb(null, require('./components/Form/AdvancedForm'))
             }, 'advancedform')
           },
         }, {
@@ -372,7 +372,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '自定义搜索',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Form/AdvancedSearch').default)
+              cb(null, require('./components/Form/AdvancedSearch'))
             }, 'advancedsearch')
           },
         }, {
@@ -380,7 +380,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '基本表格',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Table/BaseTable').default)
+              cb(null, require('./components/Table/BaseTable'))
             }, 'basetable')
           },
         }, {
@@ -388,7 +388,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '高级表格',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Table/Advanced').default)
+              cb(null, require('./components/Table/Advanced'))
             }, 'advanced')
           },
         }, {
@@ -396,7 +396,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '动态表格',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Table/Playground').default)
+              cb(null, require('./components/Table/Playground'))
             }, 'playground')
           },
         }, {
@@ -404,7 +404,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '自定义表格',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Table/CusTable').default)
+              cb(null, require('./components/Table/CusTable'))
             }, 'custable')
           },
         }, {
@@ -412,7 +412,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '格栅',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Layout/Grid').default)
+              cb(null, require('./components/Layout/Grid'))
             }, 'grid')
           },
         }, {
@@ -420,7 +420,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '格栅配置器',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Layout/GridPlayground').default)
+              cb(null, require('./components/Layout/GridPlayground'))
             }, 'gridplayground')
           },
         }, {
@@ -428,7 +428,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '布局',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Layout/Layout').default)
+              cb(null, require('./components/Layout/Layout'))
             }, 'layout')
           },
         }, {
@@ -436,7 +436,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '卡片',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Layout/Card').default)
+              cb(null, require('./components/Layout/Card'))
             }, 'card')
           },
         }, {
@@ -444,7 +444,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '菜单',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Layout/Menu').default)
+              cb(null, require('./components/Layout/Menu'))
             }, 'menu')
           },
         }, {
@@ -452,7 +452,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: 'Logo动画',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/AntMotion/LogoGather').default)
+              cb(null, require('./components/AntMotion/LogoGather'))
             }, 'logogather')
           },
         }, {
@@ -460,7 +460,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '表格增删',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/AntMotion/TableAnim').default)
+              cb(null, require('./components/AntMotion/TableAnim'))
             }, 'tableanim')
           },
         }, {
@@ -468,7 +468,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '列表动画',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/AntMotion/ListAnim').default)
+              cb(null, require('./components/AntMotion/ListAnim'))
             }, 'listanim')
           },
         }, {
@@ -476,7 +476,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '详细说明切换',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/AntMotion/DetailSwitch').default)
+              cb(null, require('./components/AntMotion/DetailSwitch'))
             }, 'detailswitch')
           },
         }, {
@@ -484,7 +484,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '列表交换位置',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/AntMotion/ListSort').default)
+              cb(null, require('./components/AntMotion/ListSort'))
             }, 'listsort')
           },
         }, {
@@ -492,7 +492,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '图片详细切换',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/AntMotion/PicAnim').default)
+              cb(null, require('./components/AntMotion/PicAnim'))
             }, 'picanim')
           },
         }, {
@@ -500,7 +500,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: 'Banner',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/AntMotion/BannerAnim').default)
+              cb(null, require('./components/AntMotion/BannerAnim'))
             }, 'banneranim')
           },
         }, {
@@ -508,7 +508,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '关于',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/About/About').default)
+              cb(null, require('./components/About/About'))
             }, 'about')
           },
         }, {
@@ -516,7 +516,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '空白',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Pages/Blank').default)
+              cb(null, require('./components/Pages/Blank'))
             }, 'blank')
           },
         }, {
@@ -524,7 +524,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '登录',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Pages/Login').default)
+              cb(null, require('./components/Pages/Login'))
             }, 'Login')
           },
         }, {
@@ -532,7 +532,7 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '注册',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Pages/Signup').default)
+              cb(null, require('./components/Pages/Signup'))
             }, 'Signup')
           },
         }, {
@@ -540,14 +540,14 @@ const Routers = function ({ history, app }) {
           breadcrumbName: '锁定',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./components/Pages/Lock').default)
+              cb(null, require('./components/Pages/Lock'))
             }, 'Lock')
           },
         }, {
           path: '*',
           getComponent (nextState, cb) {
             require.ensure([], require => {
-              cb(null, require('./containers/NotFound/NotFound').default)
+              cb(null, require('./containers/NotFound/NotFound'))
             }, 'NotFound')
           },
         },
