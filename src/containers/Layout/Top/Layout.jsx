@@ -36,10 +36,11 @@ class LayoutTopMode extends React.Component {
 
   render() {
 
-    const { app, children } = this.props;
+    const { app, children, routes } = this.props;
     const { lightThem, menuMode, siderOpenKeys } = app;
 
     const menusProps = {
+      routes,
       menuMode,
       lightThem,
       siderOpenKeys,

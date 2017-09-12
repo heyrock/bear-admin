@@ -47,10 +47,11 @@ class LayoutLeftMode extends React.Component {
 
   render() {
 
-    const { app, children } = this.props;
+    const { app, children, routes } = this.props;
     const { siderFold, siderRespons, lightThem, menuMode, siderOpenKeys, menuResponsVisible } = app;
 
     const menuProps = {
+      routes,
       menuMode,
       lightThem,
       siderOpenKeys,
