@@ -9,7 +9,6 @@
 [![Ant Design](https://img.shields.io/badge/ant--design-%5E2.12.6-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
 [![dva](https://img.shields.io/badge/dva-%5E1.2.1-brightgreen.svg)](https://github.com/dvajs/dva)
 
-> build upon create-react-app, reactjs, ant design, dva.js, webpack etc
 
 ## [预览 Preview](http://huzzbuzz.coding.me/bear-admin/)
 
