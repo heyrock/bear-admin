@@ -1,8 +1,13 @@
 ![](https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/logo-bear-black.jpg)                   
 
-[![DUB](https://img.shields.io/dub/l/vibe-d.svg)]()
+[![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/language-javascript-orange.svg)
-[![](https://travis-ci.org/huzzbuzz/bear-admin.svg?branch=master)](https://travis-ci.org/huzzbuzz/bear-admin)
+<!--[![](https://travis-ci.org/huzzbuzz/bear-admin.svg?branch=master)](https://travis-ci.org/huzzbuzz/bear-admin)-->        
+
+[![React](https://img.shields.io/badge/create--react--app-%5E1.0.13-3b5998.svg)](https://github.com/facebook/react)
+[![React](https://img.shields.io/badge/react-%5E15.6.1-brightgreen.svg?style=flat-square)](https://github.com/facebook/react)
+[![Ant Design](https://img.shields.io/badge/ant--design-%5E2.12.6-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
+[![dva](https://img.shields.io/badge/dva-%5E1.2.1-brightgreen.svg)](https://github.com/dvajs/dva)
 
 > build upon create-react-app, reactjs, ant design, dva.js, webpack etc
 
