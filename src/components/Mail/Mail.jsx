@@ -108,7 +108,7 @@ const Inbox = ({ selectKey, title }) => {
   for (let i = 1; i <= 10; i++) {
     data.push({
       key: i,
-      star: i === 1 || i === 2 || i === 3 ? true : false,
+      star: [1, 2, 3].find((n) => n >= i) > 0 ? true : false,
       name: 'Facebook',
       description: `Your new account is ready.`,
       clip: i % 2 === 0 ? true : false

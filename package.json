@@ -61,7 +61,8 @@
     "dva": "^1.2.1",
     "dva-loading": "^0.2.1",
     "less": "^2.7.2",
-    "less-loader": "^4.0.5"
+    "less-loader": "^4.0.5",
+    "timeago.js": "^3.0.2"
   },
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",

@@ -57,7 +57,7 @@ const BearMenus = ({ lightThem, menuMode, siderOpenKeys, onMenuOpenChange, onSwi
     );
     extendTopMenu.push(
       <Menu.Item className="topRightMenu" key="notification">
-        <Badge count={6}><Icon type="notification" /></Badge>
+        <Link to="/todo"><Badge count={6}><Icon type="notification" /></Badge></Link>
       </Menu.Item>
     );
   }

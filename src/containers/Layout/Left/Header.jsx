@@ -38,7 +38,7 @@ const LeftModeHeader = ({ siderFold, siderRespons, lightThem, siderOpenKeys, men
       }
       <Menu mode="horizontal" className="rightMenu" onClick={onSwitchMenuMode}>
         <Menu.Item key="notification">
-          <Badge count={6}><Icon type="notification" /></Badge>
+          <Link to="/todo"><Badge count={6}><Icon type="notification" /></Badge></Link>
         </Menu.Item>
         {
           !siderRespons ?

@@ -544,6 +544,14 @@ const Routers = function ({ history, app }) {
             }, 'Lock')
           },
         }, {
+          path: 'todo',
+          breadcrumbName: '待办消息',
+          getComponent (nextState, cb) {
+            require.ensure([], require => {
+              cb(null, require('./components/Pages/Todo'))
+            }, 'Todo')
+          },
+        }, {
           path: '*',
           getComponent (nextState, cb) {
             require.ensure([], require => {
