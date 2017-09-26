@@ -1,10 +1,9 @@
 /** 菜单 */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Badge, Menu, Icon, Switch } from 'antd';
+import { Menu, Icon } from 'antd';
 import { Link } from 'dva/router';
 const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
 
 function getMenuSelectedKey(routes) {
   if (routes === undefined ) return '';
@@ -19,7 +18,7 @@ function getMenuSelectedKey(routes) {
   return gn;
 }
 
-const BearMenus = ({ lightThem, menuMode, siderOpenKeys, onMenuOpenChange, onSwitchTheme, onSwitchMenuMode, routes }) => {
+const BearMenus = ({ lightThem, menuMode, siderOpenKeys, topHeaders, onMenuOpenChange, onSwitchTheme, onSwitchMenuMode, routes }) => {
 
   const comProps = {
     theme: lightThem ? "light" : "dark",
@@ -32,35 +31,6 @@ const BearMenus = ({ lightThem, menuMode, siderOpenKeys, onMenuOpenChange, onSwi
     onOpenChange: onMenuOpenChange,
     openKeys: siderOpenKeys
   }) : Object.assign(comProps, { style: { lineHeight: '64px' } });
-
-  // 顶部菜单拓展
-  const extendTopMenu = [];
-  if (menuMode === 'top') {
-    extendTopMenu.push(
-      <SubMenu className="topRightMenu" key="user" title={<span> <Icon type="user" />Bear熊</span>}>
-        <Menu.Item key="profile"><Link to="/profile">资料</Link></Menu.Item>
-        <Menu.Item key="logout">登出</Menu.Item>
-      </SubMenu>
-    );
-    extendTopMenu.push(
-      <SubMenu className="topRightMenu" key="setting" title={<span><Icon type="setting" />设置</span>}>
-        <MenuItemGroup title="菜单布局">
-          <Menu.Item key="left">左侧</Menu.Item>
-          <Menu.Item key="top">顶部</Menu.Item>
-        </MenuItemGroup>
-        <MenuItemGroup title="主题设置">
-          <Menu.Item key="theme">
-            <Switch onChange={onSwitchTheme} checked={!lightThem} size="small" checkedChildren="暗" unCheckedChildren="亮" />
-          </Menu.Item>
-        </MenuItemGroup>
-      </SubMenu>
-    );
-    extendTopMenu.push(
-      <Menu.Item className="topRightMenu" key="notification">
-        <Link to="/todo"><Badge count={6}><Icon type="notification" /></Badge></Link>
-      </Menu.Item>
-    );
-  }
 
   const menukey = getMenuSelectedKey(routes);
 
@@ -172,7 +142,7 @@ const BearMenus = ({ lightThem, menuMode, siderOpenKeys, onMenuOpenChange, onSwi
         <Link to="/about"><Icon type="copyright" /><span>关于</span></Link>
       </Menu.Item>
 
-      {extendTopMenu.map(v => v)}
+      {topHeaders && topHeaders.length > 0 && topHeaders.map(v => v)}
     </Menu>
   )
 }

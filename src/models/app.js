@@ -8,8 +8,10 @@ export default {
     menuResponsVisible: false,
     // 主题
     lightThem: localStorage.getItem('lightThem') !== 'false',
-    // 菜单模式
+    // 菜单布局
     menuMode: localStorage.getItem('menuMode') || 'left',
+    // 头部固定
+    headerFixed: localStorage.getItem('headerFixed') !== 'false',
     siderOpenKeys: JSON.parse(localStorage.getItem('siderOpenKeys') || '[]'),
     fakeGlobal: false
   },
@@ -82,6 +84,13 @@ export default {
       return {
         ...state,
         fakeGlobal: payload,
+      }
+    },
+    switchHeaderFixed (state, { payload }) {
+      localStorage.setItem('headerFixed', !state.headerFixed);
+      return {
+        ...state,
+        headerFixed: !state.headerFixed,
       }
     },
   },

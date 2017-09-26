@@ -7,7 +7,7 @@
 [![create-react-app](https://img.shields.io/badge/create--react--app-%5E1.0.13-3b5998.svg)](https://github.com/facebookincubator/create-react-app)
 [![React](https://img.shields.io/badge/react-%5E15.6.1-brightgreen.svg?style=flat-square)](https://github.com/facebook/react)
 [![Ant Design](https://img.shields.io/badge/ant--design-%5E2.12.6-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
-[![dva](https://img.shields.io/badge/dva-%5E1.2.1-brightgreen.svg)](https://github.com/dvajs/dva)
+[![dva](https://img.shields.io/badge/dva-%5E1.2.1-brightgreen.svg)](https://github.com/dvajs/dva)             
 
 
 ## [预览 Preview](http://huzzbuzz.coding.me/bear-admin/)
@@ -19,6 +19,8 @@ Bear Admin 同时也是个很好的前端脚手架学习示例，如果你在学
 在开始之前，推荐先学习 React、 ES2015、Node.js、Webpack 等知识，并正确安装和配置了 Node.js 环境。
 
 <hr />
+
+#### [更新日志](./CHANGELOG.md)      
 
 #### 技术栈            
  👍🏻[create-react-app](https://github.com/facebookincubator/create-react-app)         

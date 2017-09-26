@@ -14,12 +14,10 @@ class About extends React.Component {
           build upon create-react-app, reactjs, ant design, dva.js, webpack etc
         </p>
         <p>
-          Bear Admin 是一个 JavaScript 应用，项目由业界最优秀的 React 应用开发工具 create-react-app 初始化创建，
-          搭配 Antd 开箱即用的高质量 React 组件和基于现有应用架构 (redux + react-router + redux-saga 等)轻量封装的 Dva.js 一起，非常适合后台产品。
+          Bear Admin，一个 JavaScript 应用，项目由业界最优秀的 React 应用开发工具 create-react-app 初始化创建， 搭配 Antd 开箱即用的高质量 React 组件和轻量级应用框架 Dva.js 一起，非常适合后台产品。
         </p>
         <p>
-          Bear Admin 同时也是个很好的前端脚手架学习示例，如果你在学习 React 或即将学习 React，它应该可以做为教程给你一些帮助。如果你准备使用 React 全家桶开发应用，它能够快速给你提供项目脚手架，为你节省前期部分工作。
-          让我们一起享受整个 React 生态圈和工具链带来的愉悦开发体验。
+          Bear Admin 同时也是个很好的前端脚手架学习示例，如果你在学习 React 或即将学习 React，它应该可以做为教程给你一些帮助。如果你准备使用 React 全家桶开发应用，它能够快速给你提供项目脚手架，为你节省前期部分工作。 让我们一起享受整个 React 生态圈和工具链带来的愉悦开发体验。
         </p>
 
         <p>
@@ -40,12 +38,12 @@ class About extends React.Component {
 
         <h3>特性</h3>
         <p>
-          <Icon type="smile-o" /> 简洁的用户界面<br />
+          <Icon type="smile-o" /> 简洁的界面<br />
           <Icon type="smile-o" /> 菜单主题和布局切换<br />
           <Icon type="smile-o" /> 格栅布局，fully responsive<br />
-          <Icon type="smile-o" /> Code Splitting<br />
+          <Icon type="smile-o" /> Code Splitting。开启 gzip，<a href="https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/filesize.png">首屏文件仅100多KB</a>，应用载入速度超快<br />
           <Icon type="smile-o" /> 高质量脚手架<br />
-          <Icon type="smile-o" /> eject create-react-app 配置，按需定制<br />
+          <Icon type="smile-o" /> eject 配置，按需定制<br />
           <Icon type="smile-o" /> 支持更多语言特性和 polyfills，发现更多，请访问 <a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#supported-language-features-and-polyfills">create-react-app</a> 官网<br />
         </p>
 
