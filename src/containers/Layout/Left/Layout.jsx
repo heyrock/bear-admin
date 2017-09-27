@@ -47,11 +47,11 @@ class LayoutLeftMode extends React.Component {
 
   render() {
 
-    const { app, children, routes } = this.props;
+    const { app, children, location } = this.props;
     const { siderFold, siderRespons, lightThem, menuMode, siderOpenKeys, menuResponsVisible } = app;
 
     const menuProps = {
-      routes,
+      location,
       menuMode,
       lightThem,
       siderOpenKeys,
@@ -71,6 +71,11 @@ class LayoutLeftMode extends React.Component {
       onSwitchMenuMode: this.onSwitchMenuMode,
       onMenuOpenChange: this.onMenuOpenChange,
       onSwitchMenuPopover: this.onSwitchMenuPopover
+    }
+
+    const beardProps = {
+      location,
+      CommonMenus
     }
 
     const comStyle = {
@@ -106,7 +111,7 @@ class LayoutLeftMode extends React.Component {
           }
           <Layout style={dyncStyle}>
             <LeftHeader {...headerProps} />
-            <CommonBeard {...this.props} />
+            <CommonBeard {...beardProps} />
             <Content style={{ padding: 25 }}>
               {children}
             </Content>

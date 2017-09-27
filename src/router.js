@@ -1,171 +1,314 @@
 import React from 'react';
-import { Router, Route, hashHistory, IndexRedirect } from 'dva/router';
+import PropTypes from 'prop-types';
+import { Router, Switch, Route, Redirect } from 'dva/router';
+import dynamic from 'dva/dynamic';
 import App from './containers/App';
 import NotFound from './containers/NotFound/NotFound';
 
-import {
-  About,
-  Blank,
-  Login,
-  Signup,
-  Lock,
-  Profile,
+const Routers = function ({ history, app }) {
+  const routes = [
+    {
+      path: '/dashboard1',
+      component: () => import('./components/Dashboard/Dashboard1'),
+    },
+    {
+      path: '/dashboard2',
+      component: () => import('./components/Dashboard/Dashboard2'),
+    },
+    {
+      path: '/mail',
+      component: () => import('./components/Mail/Mail'),
+    },
+    {
+      path: '/profile',
+      component: () => import('./components/Pages/Profile'),
+    },
+    {
+      path: '/blank',
+      component: () => import('./components/Pages/Blank'),
+    },
+    {
+      path: '/login',
+      component: () => import('./components/Pages/Login'),
+    },
+    {
+      path: '/signup',
+      component: () => import('./components/Pages/Signup'),
+    },
+    {
+      path: '/lock',
+      component: () => import('./components/Pages/Lock'),
+    },
+    {
+      path: '/todo',
+      component: () => import('./components/Pages/Todo'),
+    },
+    {
+      path: '/affix',
+      component: () => import('./components/Navigation/Affix')
+    },
+    {
+      path: '/pagination',
+      component: () => import('./components/Navigation/Pagination')
+    },
+    {
+      path: '/breadcrumb',
+      component: () => import('./components/Navigation/Breadcrumb')
+    },
+    {
+      path: '/steps',
+      component: () => import('./components/Navigation/Steps')
+    },
+    {
+      path: '/avatar',
+      component: () => import('./components/UI/Avatar')
+    },
+    {
+      path: '/button',
+      component: () => import('./components/UI/Button')
+    },
+    {
+      path: '/icon',
+      component: () => import('./components/UI/Icon')
+    },
+    {
+      path: '/tag',
+      component: () => import('./components/UI/Tag')
+    },
+    {
+      path: '/switch',
+      component: () => import('./components/UI/Switch')
+    },
+    {
+      path: '/calendar',
+      component: () => import('./components/UI/Calendar')
+    },
+    {
+      path: '/checkbox',
+      component: () => import('./components/UI/Checkbox')
+    },
+    {
+      path: '/radio',
+      component: () => import('./components/UI/Radio')
+    },
+    {
+      path: '/input',
+      component: () => import('./components/UI/Input')
+    },
+    {
+      path: '/timeline',
+      component: () => import('./components/UI/Timeline')
+    },
+    {
+      path: '/badge',
+      component: () => import('./components/UI/Badge')
+    },
+    {
+      path: '/slider',
+      component: () => import('./components/UI/Slider')
+    },
+    {
+      path: '/popconfirm',
+      component: () => import('./components/Display/Popconfirm')
+    },
+    {
+      path: '/popover',
+      component: () => import('./components/Display/Popover')
+    },
+    {
+      path: '/notification',
+      component: () => import('./components/Display/Notification')
+    },
+    {
+      path: '/message',
+      component: () => import('./components/Display/Message')
+    },
+    {
+      path: '/alert',
+      component: () => import('./components/Display/Alert')
+    },
+    {
+      path: '/tooltip',
+      component: () => import('./components/Display/Tooltip')
+    },
+    {
+      path: '/collapse',
+      component: () => import('./components/Display/Collapse')
+    },
+    {
+      path: '/tree',
+      component: () => import('./components/Display/Tree')
+    },
+    {
+      path: '/treeselect',
+      component: () => import('./components/Display/TreeSelect')
+    },
+    {
+      path: '/modal',
+      component: () => import('./components/Display/Modal')
+    },
+    {
+      path: '/tabs',
+      component: () => import('./components/Display/Tabs')
+    },
+    {
+      path: '/carousel',
+      component: () => import('./components/Display/Carousel')
+    },
+    {
+      path: '/progress',
+      component: () => import('./components/Display/Progress')
+    },
+    {
+      path: '/mention',
+      component: () => import('./components/Entry/Mention')
+    },
+    {
+      path: '/rate',
+      component: () => import('./components/Entry/Rate')
+    },
+    {
+      path: '/select',
+      component: () => import('./components/Entry/Select')
+    },
+    {
+      path: '/transfer',
+      component: () => import('./components/Entry/Transfer')
+    },
+    {
+      path: '/dropdown',
+      component: () => import('./components/Entry/Dropdown')
+    },
+    {
+      path: '/autocomplete',
+      component: () => import('./components/Entry/AutoComplete')
+    },
+    {
+      path: '/cascader',
+      component: () => import('./components/Entry/Cascader')
+    },
+    {
+      path: '/datepicker',
+      component: () => import('./components/Entry/DatePicker')
+    },
+    {
+      path: '/timepicker',
+      component: () => import('./components/Entry/TimePicker')
+    },
+    {
+      path: '/baseform',
+      component: () => import('./components/Form/BaseForm')
+    },
+    {
+      path: '/advancedform',
+      component: () => import('./components/Form/AdvancedForm')
+    },
+    {
+      path: '/advancedsearch',
+      component: () => import('./components/Form/AdvancedSearch')
+    },
+    {
+      path: '/basetable',
+      component: () => import('./components/Table/BaseTable')
+    },
+    {
+      path: '/advanced',
+      component: () => import('./components/Table/Advanced')
+    },
+    {
+      path: '/playground',
+      component: () => import('./components/Table/Playground')
+    },
+    {
+      path: '/custable',
+      component: () => import('./components/Table/CusTable')
+    },
+    {
+      path: '/grid',
+      component: () => import('./components/Layout/Grid')
+    },
+    {
+      path: '/gridplayground',
+      component: () => import('./components/Layout/GridPlayground')
+    },
+    {
+      path: '/layout',
+      component: () => import('./components/Layout/Layout')
+    },
+    {
+      path: '/card',
+      component: () => import('./components/Layout/Card')
+    },
+    {
+      path: '/menu',
+      component: () => import('./components/Layout/Menu')
+    },
+    {
+      path: '/logogather',
+      component: () => import('./components/AntMotion/LogoGather')
+    },
+    {
+      path: '/tableanim',
+      component: () => import('./components/AntMotion/TableAnim')
+    },
+    {
+      path: '/listanim',
+      component: () => import('./components/AntMotion/ListAnim')
+    },
+    {
+      path: '/detailswitch',
+      component: () => import('./components/AntMotion/DetailSwitch')
+    },
+    {
+      path: '/listsort',
+      component: () => import('./components/AntMotion/ListSort')
+    },
+    {
+      path: '/picanim',
+      component: () => import('./components/AntMotion/PicAnim')
+    },
+    {
+      path: '/banneranim',
+      component: () => import('./components/AntMotion/BannerAnim')
+    },
+    {
+      path: '/about',
+      component: () => import('./components/About/About')
+    }
+  ]
 
-  Dashboard1,
-  Dashboard2,
-  Mail,
-  Grid,
-  GridPlayground,
-  Layout,
-  Card,
-  Menu,
-  TableAnim,
-  ListAnim,
-  DetailSwitch,
-  ListSort,
-  PicAnim,
-  BannerAnim,
-  LogoGather,
+  const Notfound = dynamic({
+    app,
+    component: () => NotFound,
+  })
 
-  Avatar,
-  Button,
-  Icon,
-  Checkbox,
-  Input,
-  Radio,
-  Switch,
-  Timeline,
-  Badge,
-  Tag,
-  Calendar,
-  Slider,
-
-  Affix,
-  Pagination,
-  Breadcrumb,
-  Steps,
-
-  Popconfirm,
-  Popover,
-  Notifications,
-  Messages,
-  Alert,
-  Tooltip,
-  Collapse,
-  Tree,
-  TreeSelect,
-  Modal,
-  Tabs,
-  Carousel,
-  Progress,
-
-  Mention,
-  Rate,
-  Select,
-  Transfer,
-  Dropdown,
-  AutoComplete,
-  Cascader,
-  DatePicker,
-  TimePicker,
-
-  BaseForm,
-  AdvancedForm,
-  AdvancedSearch,
-
-  BaseTable,
-  Advanced,
-  CusTable,
-  Playground
-} from './components';
-
-
-export default function() {
   return (
-    <Router history={hashHistory}>
-      <Route path="/" breadcrumbName="首页" component={App}>
-        <IndexRedirect to="dashboard1" />
-        <Route path="dashboard1" breadcrumbName="仪表盘1" component={Dashboard1} />
-        <Route path="dashboard2" breadcrumbName="仪表盘2" component={Dashboard2} />
-
-        <Route path="mail" breadcrumbName="邮箱" component={Mail} />
-
-        <Route path="profile" breadcrumbName="资料" component={Profile}/>
-
-        <Route path="affix" breadcrumbName="固钉" component={Affix}/>
-        <Route path="pagination" breadcrumbName="分页" component={Pagination}/>
-        <Route path="breadcrumb" breadcrumbName="面包屑" component={Breadcrumb}/>
-        <Route path="steps" breadcrumbName="步骤条" component={Steps}/>
-
-        <Route path="avatar" breadcrumbName="头像" component={Avatar}/>
-        <Route path="button" breadcrumbName="按钮" component={Button}/>
-        <Route path="icon" breadcrumbName="图标" component={Icon}/>
-        <Route path="tag" breadcrumbName="标签" component={Tag}/>
-        <Route path="switch" breadcrumbName="开关" component={Switch}/>
-        <Route path="calendar" breadcrumbName="日历" component={Calendar}/>
-        <Route path="checkbox" breadcrumbName="多选框" component={Checkbox}/>
-        <Route path="radio" breadcrumbName="单选框" component={Radio}/>
-        <Route path="input" breadcrumbName="输入框" component={Input}/>
-        <Route path="timeline" breadcrumbName="时间轴" component={Timeline}/>
-        <Route path="badge" breadcrumbName="徽标数" component={Badge}/>
-        <Route path="slider" breadcrumbName="滑动输入条" component={Slider}/>
-
-
-        <Route path="popconfirm" breadcrumbName="气泡确认框" component={Popconfirm}/>
-        <Route path="popover" breadcrumbName="气泡卡片" component={Popover}/>
-        <Route path="notification" breadcrumbName="气泡确认框" component={Notifications}/>
-        <Route path="message" breadcrumbName="全局提示" component={Messages}/>
-        <Route path="alert" breadcrumbName="警告提示" component={Alert}/>
-        <Route path="tooltip" breadcrumbName="文字提示" component={Tooltip}/>
-        <Route path="collapse" breadcrumbName="折叠面板" component={Collapse}/>
-        <Route path="tree" breadcrumbName="树形控件" component={Tree}/>
-        <Route path="treeselect" breadcrumbName="树选择" component={TreeSelect}/>
-        <Route path="modal" breadcrumbName="对话框" component={Modal}/>
-        <Route path="tabs" breadcrumbName="标签页" component={Tabs}/>
-        <Route path="carousel" breadcrumbName="走马灯" component={Carousel}/>
-        <Route path="progress" breadcrumbName="进度条" component={Progress}/>
-
-
-        <Route path="mention" breadcrumbName="提及" component={Mention}/>
-        <Route path="rate" breadcrumbName="评分" component={Rate}/>
-        <Route path="select" breadcrumbName="选择器" component={Select}/>
-        <Route path="transfer" breadcrumbName="穿梭框" component={Transfer}/>
-        <Route path="dropdown" breadcrumbName="下拉菜单" component={Dropdown}/>
-        <Route path="autocomplete" breadcrumbName="自动完成" component={AutoComplete}/>
-        <Route path="cascader" breadcrumbName="级联选择" component={Cascader}/>
-        <Route path="datepicker" breadcrumbName="日期选择框" component={DatePicker}/>
-        <Route path="timepicker" breadcrumbName="时间选择框" component={TimePicker}/>
-
-        <Route path="baseform" breadcrumbName="基本表单" component={BaseForm}/>
-        <Route path="advancedform" breadcrumbName="高级表单" component={AdvancedForm}/>
-        <Route path="advancedsearch" breadcrumbName="自定义搜索" component={AdvancedSearch}/>
-
-        <Route path="basetable" breadcrumbName="基本表格" component={BaseTable}/>
-        <Route path="advanced" breadcrumbName="高级表格" component={Advanced}/>
-        <Route path="playground" breadcrumbName="动态表格" component={Playground}/>
-        <Route path="custable" breadcrumbName="自定义表格" component={CusTable}/>
-
-        <Route path="grid" breadcrumbName="格栅" component={Grid}/>
-        <Route path="gridplayground" breadcrumbName="格栅配置器" component={GridPlayground}/>
-        <Route path="layout" breadcrumbName="布局" component={Layout}/>
-        <Route path="card" breadcrumbName="卡片" component={Card}/>
-        <Route path="menu" breadcrumbName="菜单" component={Menu}/>
-
-        <Route path="logogather" breadcrumbName="Logo动画" component={LogoGather}/>
-        <Route path="tableanim" breadcrumbName="表格增删" component={TableAnim}/>
-        <Route path="listanim" breadcrumbName="列表动画" component={ListAnim}/>
-        <Route path="detailswitch" breadcrumbName="详细说明切换" component={DetailSwitch}/>
-        <Route path="listsort" breadcrumbName="列表交换位置" component={ListSort}/>
-        <Route path="picanim" breadcrumbName="图片详细切换" component={PicAnim}/>
-        <Route path="banneranim" breadcrumbName="Banner" component={BannerAnim}/>
-
-        <Route path="blank" breadcrumbName="空白" component={Blank}/>
-        <Route path="login" breadcrumbName="登录" component={Login} />
-        <Route path="signup" breadcrumbName="注册" component={Signup} />
-        <Route path="lock" breadcrumbName="锁屏" component={Lock} />
-        <Route path="about" breadcrumbName="关于" component={About}/>
-      </Route>
-      <Route path="*" component={NotFound} />
+    <Router history={history}>
+      <App>
+        <Switch>
+          <Route exact path="/" render={() => (<Redirect to="/dashboard1" />)} />
+          {
+            routes.map(({ path, ...dynamics }, key) => (
+              <Route key={key}
+                exact
+                path={path}
+                component={dynamic({
+                  app,
+                  ...dynamics,
+                })}
+              />
+            ))
+          }
+          <Route component={Notfound} />
+        </Switch>
+      </App>
     </Router>
   )
 }
+
+Routers.propTypes = {
+  history: PropTypes.object,
+  app: PropTypes.object,
+}
+
+export default Routers;

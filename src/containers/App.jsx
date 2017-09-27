@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
+import { withRouter } from 'dva/router';
 import { Spin } from 'antd';
 import LayoutLeft from './Layout/Left/Layout';
 import LayoutTop from './Layout/Top/Layout';
@@ -27,4 +28,4 @@ class App extends React.Component {
   }
 }
 
-export default connect(({ app }) => ({ app }))(App);
+export default withRouter(connect(({ app }) => ({ app }))(App));

@@ -5,20 +5,14 @@ import { Menu, Icon } from 'antd';
 import { Link } from 'dva/router';
 const SubMenu = Menu.SubMenu;
 
-function getMenuSelectedKey(routes) {
-  if (routes === undefined ) return '';
-  let gn = '';
-  for (let i = routes.length - 1; i >= 0; i--) {
-    const obj = routes[i];
-    if ('path' in obj) {
-      gn = obj.path;
-      break;
-    }
-  }
-  return gn;
+function getMenuSelectedKey(location) {
+  if (!location) return '';
+  const { pathname } = location;
+  if (!pathname) return '';
+  return pathname.replace('/', '');
 }
 
-const BearMenus = ({ lightThem, menuMode, siderOpenKeys, topHeaders, onMenuOpenChange, onSwitchTheme, onSwitchMenuMode, routes }) => {
+const BearMenus = ({ lightThem, menuMode, siderOpenKeys, topHeaders, onMenuOpenChange, onSwitchTheme, onSwitchMenuMode, location }) => {
 
   const comProps = {
     theme: lightThem ? "light" : "dark",
@@ -32,7 +26,7 @@ const BearMenus = ({ lightThem, menuMode, siderOpenKeys, topHeaders, onMenuOpenC
     openKeys: siderOpenKeys
   }) : Object.assign(comProps, { style: { lineHeight: '64px' } });
 
-  const menukey = getMenuSelectedKey(routes);
+  const menukey = getMenuSelectedKey(location);
 
   return (
     <Menu {...menuProps} selectedKeys={Array.of(menukey)}>

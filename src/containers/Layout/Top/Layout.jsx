@@ -45,7 +45,7 @@ class LayoutTopMode extends React.Component {
 
   render() {
 
-    const { app, children, routes } = this.props;
+    const { app, children, location } = this.props;
     const { lightThem, menuMode, siderOpenKeys, headerFixed } = app;
 
     // 顶部菜单拓展
@@ -81,7 +81,7 @@ class LayoutTopMode extends React.Component {
     );
 
     const menusProps = {
-      routes,
+      location,
       menuMode,
       lightThem,
       siderOpenKeys,
@@ -89,6 +89,10 @@ class LayoutTopMode extends React.Component {
       onSwitchTheme: this.onSwitchTheme,
       onMenuOpenChange: this.onMenuOpenChange,
       onSwitchMenuMode: this.onSwitchMenuMode
+    }
+
+    const beardProps = {
+      location
     }
 
     return (
@@ -104,7 +108,7 @@ class LayoutTopMode extends React.Component {
             <CommonMenus {...menusProps} />
           </Header>
           <Content className={classnames('topContent', { 'topContentFixed' : headerFixed || false })}>
-            <CommonBeard {...this.props} />
+            <CommonBeard {...beardProps} />
             <div style={{ padding: 25 }}>
               {children}
             </div>
