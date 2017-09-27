@@ -6,8 +6,8 @@
 
 [![create-react-app](https://img.shields.io/badge/create--react--app-%5E1.0.13-3b5998.svg)](https://github.com/facebookincubator/create-react-app)
 [![React](https://img.shields.io/badge/react-%5E15.6.1-brightgreen.svg?style=flat-square)](https://github.com/facebook/react)
-[![Ant Design](https://img.shields.io/badge/ant--design-%5E2.12.6-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
-[![dva](https://img.shields.io/badge/dva-%5E1.2.1-brightgreen.svg)](https://github.com/dvajs/dva)             
+[![Ant Design](https://img.shields.io/badge/ant--design-%5E2.13.3-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
+[![dva](https://img.shields.io/badge/dva-%5E2.0.3-brightgreen.svg)](https://github.com/dvajs/dva)             
 
 
 ## [预览 Preview](http://huzzbuzz.coding.me/bear-admin/)
