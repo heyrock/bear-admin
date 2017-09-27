@@ -106,4 +106,26 @@ antd 全家桶
 ![9](https://user-images.githubusercontent.com/16314691/29705203-9494e63c-89af-11e7-9146-07a152e3c972.jpg)        
 
 
+#### 目录结构
+
+```bash
+├── /build/           # 打包输出
+├── /config/          # create-react-app 配置
+│ ├── /webpack.config.dev.js/   # 开发配置
+│ ├── /webpack.config.prod.js/  # 生产配置
+├── /public/         # 公共文件
+├── /scripts/        # create-react-app 脚本
+├── /src/            # 项目源码
+│ ├── /assets/      # 资源文件
+│ ├── /components/  # 示例组件
+│ ├── /containers/  # layout 组件
+│ ├── /models/      # dva 数据模型
+│ ├── /theme/       # 皮肤样式
+│ ├── /utils/       # 工具函数
+│ │ └── config.js    # 项目配置
+│ ├── route.js      # 路由配置
+│ └── index.js      # 入口文件
+└── package.json    # 项目信息
+```
+
 :heartbeat::heartbeat: 欢迎 star 和 watch 支持 :heartbeat::heartbeat: 
