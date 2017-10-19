@@ -82,7 +82,7 @@ create-react-app
 react 全家桶     
 antd 全家桶      
 
-:heartbeat::heartbeat: 欢迎 star 和 watch 支持 :heartbeat::heartbeat: 
+:heartbeat::heartbeat: 欢迎 star 支持 :heartbeat::heartbeat: 
 
 <hr />     
 
@@ -128,4 +128,4 @@ antd 全家桶
 └── package.json    # 项目信息
 ```
 
-:heartbeat::heartbeat: 欢迎 star 和 watch 支持 :heartbeat::heartbeat: 
+:heartbeat::heartbeat: 欢迎 star 支持 :heartbeat::heartbeat: 
