@@ -32,14 +32,14 @@ class PopoverDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Popover content={content} title="Title">
                 <Button type="primary">Hover me</Button>
               </Popover>
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="三种触发方式">
+            <Card hoverable title="三种触发方式">
               <Popover content={content} title="Title" trigger="hover">
                 <Button>Hover me</Button>
               </Popover>{' '}
@@ -54,7 +54,7 @@ class PopoverDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="从浮层内关闭">
+            <Card hoverable title="从浮层内关闭">
               <Popover
                 content={<a onClick={this.hide}>Close</a>}
                 title="Title"
@@ -67,7 +67,7 @@ class PopoverDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="箭头指向">
+            <Card hoverable title="箭头指向">
               <Popover placement="topLeft" title={text} content={content}>
                 <Button>Align edge / 边缘对齐</Button>
               </Popover>
@@ -80,7 +80,7 @@ class PopoverDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="位置">
+            <Card hoverable title="位置">
               <div style={{ marginLeft: buttonWidth, whiteSpace: 'nowrap' }}>
                 <Popover placement="topLeft" title={text} content={content} trigger="click">
                   <Button style={btnStyle}>TL</Button>

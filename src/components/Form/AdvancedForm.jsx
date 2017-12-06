@@ -13,38 +13,38 @@ class AdvanceFormDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="表单联动">
+            <Card hoverable title="表单联动">
               <Demo1App />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="自定义表单控件">
+            <Card hoverable title="自定义表单控件">
               <Demo2App />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="表单数据存储于上层组件">
+            <Card hoverable title="表单数据存储于上层组件">
               <Demo3App />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="自定义校验">
+            <Card hoverable title="自定义校验">
               <Demo4App />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="表单布局">
+            <Card hoverable title="表单布局">
               <Demo5App />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="校验其他组件">
+            <Card hoverable title="校验其他组件">
               <Demo6App />
             </Card>
           </Col>
@@ -229,7 +229,7 @@ const Demo3Form = Form.create({
     return {
       username: {
         ...props.username,
-        value: props.username.value.toUpperCase(),
+        value: Form.createFormField({ value: props.username.value.toUpperCase() }),
       },
     };
   },

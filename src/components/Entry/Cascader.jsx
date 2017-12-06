@@ -58,24 +58,24 @@ class CascaderDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Cascader options={options} placeholder="请选择" />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="默认值">
+            <Card hoverable title="默认值">
               <Cascader defaultValue={['zhejiang', 'hangzhou', 'xihu']} options={options} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="切换按钮和结果分开">
+            <Card hoverable title="切换按钮和结果分开">
               <Demo1 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="移入展开">
+            <Card hoverable title="移入展开">
               <Cascader
                 options={options}
                 expandTrigger="hover"
@@ -87,24 +87,24 @@ class CascaderDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="禁用选项">
+            <Card hoverable title="禁用选项">
               <Cascader placeholder="请选择" options={options_with_disabled} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="选择即改变">
+            <Card hoverable title="选择即改变">
               <Cascader placeholder="请选择" options={options} changeOnSelect />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="自定义已选项" extra="例如给最后一项加上邮编链接">
+            <Card hoverable title="自定义已选项" extra="例如给最后一项加上邮编链接">
               <Demo2 />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="搜索">
+            <Card hoverable title="搜索">
               <Cascader
                 options={options}
                 placeholder="请选择"
@@ -113,14 +113,14 @@ class CascaderDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="动态加载选项">
+            <Card hoverable title="动态加载选项">
               <Demo3 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="大小">
+            <Card hoverable title="大小">
               <Cascader size="large" options={options} placeholder="请选择" /><br /><br />
               <Cascader options={options} placeholder="请选择" /><br /><br />
               <Cascader size="small" options={options} placeholder="请选择" /><br /><br />

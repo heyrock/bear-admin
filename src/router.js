@@ -2,8 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Router, Switch, Route, Redirect } from 'dva/router';
 import dynamic from 'dva/dynamic';
+import { LocaleProvider, Spin } from 'antd';
+import zhCN from 'antd/lib/locale-provider/zh_CN';
+
 import App from './containers/App';
 import NotFound from './containers/NotFound/NotFound';
+
+dynamic.setDefaultLoadingComponent(() => {
+  return <Spin size="large" className="globalSpin" />;
+});
 
 const Routers = function ({ history, app }) {
   const routes = [
@@ -283,26 +290,28 @@ const Routers = function ({ history, app }) {
   })
 
   return (
-    <Router history={history}>
-      <App>
-        <Switch>
-          <Route exact path="/" render={() => (<Redirect to="/dashboard1" />)} />
-          {
-            routes.map(({ path, ...dynamics }, key) => (
-              <Route key={key}
-                exact
-                path={path}
-                component={dynamic({
-                  app,
-                  ...dynamics,
-                })}
-              />
-            ))
-          }
-          <Route component={Notfound} />
-        </Switch>
-      </App>
-    </Router>
+    <LocaleProvider locale={zhCN}>
+      <Router history={history}>
+        <App>
+          <Switch>
+            <Route exact path="/" render={() => (<Redirect to="/dashboard1" />)} />
+            {
+              routes.map(({ path, ...dynamics }, key) => (
+                <Route key={key}
+                  exact
+                  path={path}
+                  component={dynamic({
+                    app,
+                    ...dynamics,
+                  })}
+                />
+              ))
+            }
+            <Route component={Notfound} />
+          </Switch>
+        </App>
+      </Router>
+    </LocaleProvider>
   )
 }
 

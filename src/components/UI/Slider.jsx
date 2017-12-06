@@ -11,12 +11,12 @@ class SliderDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Base />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="带输入框的滑块，和 InputNumber 组件保持同步">
+            <Card hoverable title="带输入框的滑块，和 InputNumber 组件保持同步">
               <IntegerStep />
               <DecimalStep />
             </Card>
@@ -24,12 +24,12 @@ class SliderDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="带 icon 的滑块">
+            <Card hoverable title="带 icon 的滑块">
               <IconSlider min={0} max={20} value={0} icon={['frown-o', 'smile-o']} />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="自定义提示">
+            <Card hoverable title="自定义提示">
               <Slider tipFormatter={(value) => { return `${value}%` }} />
               <Slider tipFormatter={null} />
             </Card>
@@ -37,12 +37,12 @@ class SliderDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="垂直方向">
+            <Card hoverable title="垂直方向">
               <VerticalSlider />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="带标签的滑块">
+            <Card hoverable title="带标签的滑块">
               <MarksSlider />
             </Card>
           </Col>

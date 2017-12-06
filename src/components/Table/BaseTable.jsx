@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, Table, Icon } from 'antd';
+import { Card, Row, Col, Table, Icon, Divider } from 'antd';
 
 class BaseTableDemo extends React.Component {
 
@@ -9,21 +9,21 @@ class BaseTableDemo extends React.Component {
       <div>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Demo1 />
             </Card>
           </Col>
         </Row>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="可选择">
+            <Card hoverable title="可选择">
               <Demo2 />
             </Card>
           </Col>
         </Row>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="自定义选择项">
+            <Card hoverable title="自定义选择项">
               <Demo3 />
             </Card>
           </Col>
@@ -55,9 +55,9 @@ class Demo1 extends React.Component {
       render: (text, record) => (
         <span>
           <a>Action 一 {record.name}</a>
-          <span className="ant-divider" />
+          <Divider type="vertical" />
           <a>Delete</a>
-          <span className="ant-divider" />
+          <Divider type="vertical" />
           <a className="ant-dropdown-link">
             More actions <Icon type="down" />
           </a>

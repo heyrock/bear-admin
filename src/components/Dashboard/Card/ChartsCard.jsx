@@ -30,7 +30,7 @@ class ChartsCard extends React.Component {
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
             <Card
               bordered={false}
-              noHovering>
+              hoverable>
               <ReactEcharts
                 option={chartscard.sdoption}
                 style={reStyle} />
@@ -39,7 +39,7 @@ class ChartsCard extends React.Component {
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
             <Card
               bordered={false}
-              noHovering>
+              hoverable>
               <ReactEcharts
                 option={chartscard.eeoption}
                 onEvents={onEvents}
@@ -51,7 +51,7 @@ class ChartsCard extends React.Component {
             <Col>
             <Card
               bordered={false}
-              noHovering>
+              hoverable>
               <ReactEcharts
                 option={airportConfig.getOption}
                 style={{height: '600px', width: '100%'}} />

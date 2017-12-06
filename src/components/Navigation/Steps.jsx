@@ -36,7 +36,7 @@ class StepsDemo extends React.Component {
       <div>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Steps current={1}>
                 <Step title="已处理" description="这里是描述信息" />
                 <Step title="当前" description="这里是描述信息" />
@@ -47,7 +47,7 @@ class StepsDemo extends React.Component {
         </Row>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="迷你版">
+            <Card hoverable title="迷你版">
               <Steps size="small" current={1}>
                 <Step title="已处理" />
                 <Step title="当前" />
@@ -58,7 +58,7 @@ class StepsDemo extends React.Component {
         </Row>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="带图标的步骤条">
+            <Card hoverable title="带图标的步骤条">
               <Steps>
                 <Step status="finish" title="登录" icon={<Icon type="user" />} />
                 <Step status="finish" title="验证" icon={<Icon type="solution" />} />
@@ -70,7 +70,7 @@ class StepsDemo extends React.Component {
         </Row>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="步骤切换">
+            <Card hoverable title="步骤切换">
               <Steps current={current}>
                 {steps.map(item => <Step key={item.title} title={item.title} />)}
               </Steps>
@@ -99,7 +99,7 @@ class StepsDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="竖直方向的步骤条">
+            <Card hoverable title="竖直方向的步骤条">
               <Steps direction="vertical" current={1}>
                 <Step title="已处理" description="这里是描述信息" />
                 <Step title="当前" description="这里是描述信息" />
@@ -108,7 +108,7 @@ class StepsDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="竖直方向的小型步骤条">
+            <Card hoverable title="竖直方向的小型步骤条">
               <Steps direction="vertical" size="small" current={1}>
                 <Step title="已处理" description="这里是描述信息" />
                 <Step title="当前" description="这里是描述信息" />
@@ -119,7 +119,7 @@ class StepsDemo extends React.Component {
         </Row>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="步骤运行错误">
+            <Card hoverable title="步骤运行错误">
               <Steps current={1} status="error">
                 <Step title="已处理" description="这里是描述信息" />
                 <Step title="当前" description="该步骤操作错误，请重新操作" />
@@ -130,7 +130,7 @@ class StepsDemo extends React.Component {
         </Row>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="点状步骤条">
+            <Card hoverable title="点状步骤条">
               <Steps progressDot current={1}>
                 <Step title="已处理" description="这里是描述信息" />
                 <Step title="当前" description="这里是描述信息" />

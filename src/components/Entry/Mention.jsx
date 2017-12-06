@@ -29,7 +29,7 @@ class MentionDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Mention
                 style={{ width: '100%', height: 100 }}
                 onChange={(text) => {
@@ -41,31 +41,31 @@ class MentionDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="异步加载">
+            <Card hoverable title="异步加载">
               <AsyncMentionDemo />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="自定义建议">
+            <Card hoverable title="自定义建议">
               <CustomNavMentionDemo />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="自定义建议（含头像）">
+            <Card hoverable title="自定义建议（含头像）">
               <CustomNavMentionWithIconDemo />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="配合 Form 使用">
+            <Card hoverable title="配合 Form 使用">
               <WithFormDemo />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="自定义触发字符" extra="通过 prefix 属性自定义触发字符。默认为 @, 可以定义为数组">
+            <Card hoverable title="自定义触发字符" extra="通过 prefix 属性自定义触发字符。默认为 @, 可以定义为数组">
               <CustomMentionDemo />
             </Card>
           </Col>

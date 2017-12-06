@@ -85,7 +85,7 @@ class LayoutLeftMode extends React.Component {
     }
 
     const dyncStyle = siderRespons ? comStyle : (
-      !siderFold ? Object.assign(comStyle, { marginLeft: 200 }) : Object.assign(comStyle, { marginLeft: 64 })
+      !siderFold ? Object.assign(comStyle, { marginLeft: 200 }) : Object.assign(comStyle, { marginLeft: 78 })
     )
 
     return (

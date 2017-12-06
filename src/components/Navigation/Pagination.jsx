@@ -17,48 +17,48 @@ class PaginationDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Pagination defaultCurrent={1} total={50} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="更多">
+            <Card hoverable title="更多">
               <Pagination defaultCurrent={6} total={500} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="改变">
+            <Card hoverable title="改变">
               <Pagination showSizeChanger defaultCurrent={3} total={500} />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="跳转">
+            <Card hoverable title="跳转">
               <Pagination showQuickJumper defaultCurrent={2} total={500} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="迷你">
+            <Card hoverable title="迷你">
               <Pagination size="small" total={50} />
               <Pagination size="small" total={50} showSizeChanger showQuickJumper />
               <Pagination size="small" total={50} showTotal={(total) => { return `Total ${total} items` }} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="简洁">
+            <Card hoverable title="简洁">
               <Pagination simple defaultCurrent={2} total={50} />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="受控">
+            <Card hoverable title="受控">
               <Pagination current={this.state.current} onChange={this.onChange} total={50} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="总数">
+            <Card hoverable title="总数">
               <Pagination
                 total={85}
                 showTotal={total => `Total ${total} items`}

@@ -22,14 +22,14 @@ class PopconfirmDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Popconfirm title="确认删除吗?" onConfirm={this.confirm} onCancel={this.cancel} okText="是" cancelText="否">
                 <a>删除</a>
               </Popconfirm>
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="国际化">
+            <Card hoverable title="国际化">
               <Popconfirm title="Are you sure？" okText="Yes" cancelText="No">
                 <a>Delete</a>
               </Popconfirm>
@@ -38,7 +38,7 @@ class PopconfirmDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="位置">
+            <Card hoverable title="位置">
               <div style={{ marginLeft: 70, whiteSpace: 'nowrap' }}>
                 <Popconfirm placement="topLeft" title={text} onConfirm={this.confirm} okText="是" cancelText="否">
                   <Button style={btnStyle}>TL</Button>

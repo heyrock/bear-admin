@@ -18,7 +18,7 @@ class CountCard extends React.Component {
                   <Card
                     className='countCard'
                     bordered={false}
-                    noHovering>
+                    hoverable>
                     <Icon className='iconWarp' style={{ color: v.color }} type={v.icon} />
                     <div className='content'>
                       <p className='title'>{v.title || ''}</p>

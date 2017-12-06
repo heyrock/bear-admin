@@ -28,12 +28,12 @@ class InputDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Input placeholder="Basic usage" />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="搜索框">
+            <Card hoverable title="搜索框">
               <Search
                 placeholder="input search text"
                 style={{ width: 200 }}
@@ -44,7 +44,7 @@ class InputDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="前置/后置标签">
+            <Card hoverable title="前置/后置标签">
               <div style={{ marginBottom: 16 }}>
                 <Input addonBefore="Http://" addonAfter=".com" defaultValue="mysite" />
               </div>
@@ -57,7 +57,7 @@ class InputDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="适应文本高度的文本域">
+            <Card hoverable title="适应文本高度的文本域">
               <TextArea placeholder="Autosize height based on content lines" autosize />
               <div style={{ margin: '24px 0' }} />
               <TextArea placeholder="Autosize height with minimum and maximum number of lines" autosize={{ minRows: 2, maxRows: 6 }} />
@@ -66,12 +66,12 @@ class InputDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="文本域">
+            <Card hoverable title="文本域">
               <TextArea rows={4} />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="三种大小">
+            <Card hoverable title="三种大小">
               <div>
                 <Input size="large" placeholder="large size" />
                 <br /><br />
@@ -84,12 +84,12 @@ class InputDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="输入时格式化展示">
+            <Card hoverable title="输入时格式化展示">
               <NumericInputDemo />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="输入框组合">
+            <Card hoverable title="输入框组合">
             <InputGroup size="large">
           <Col span={4}>
             <Input defaultValue="0571" />

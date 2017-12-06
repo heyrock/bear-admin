@@ -18,7 +18,7 @@ class DropdownDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Dropdown overlay={<Menu>
                 <Menu.Item>
                   <a target="_blank" rel="noopener noreferrer" href="http://github.com/huzzbuzz">1st menu item</a>
@@ -37,7 +37,7 @@ class DropdownDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="其他元素">
+            <Card hoverable title="其他元素">
               <Dropdown overlay={<Menu>
                 <Menu.Item key="0">
                   <a target="_blank" rel="noopener noreferrer" href="http://github.com/huzzbuzz/">1st menu item</a>
@@ -55,7 +55,7 @@ class DropdownDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="多级菜单">
+            <Card hoverable title="多级菜单">
               <Dropdown overlay={<Menu>
                 <Menu.Item>1st menu item</Menu.Item>
                 <Menu.Item>2nd menu item</Menu.Item>
@@ -77,7 +77,7 @@ class DropdownDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="触发方式">
+            <Card hoverable title="触发方式">
               <Dropdown overlay={<Menu>
                 <Menu.Item key="0">
                   <a href="http://github.com/huzzbuzz/">1st menu item</a>
@@ -95,7 +95,7 @@ class DropdownDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="带下拉框的按钮">
+            <Card hoverable title="带下拉框的按钮">
               <Dropdown.Button overlay={menu}>
                 Dropdown
               </Dropdown.Button>
@@ -114,7 +114,7 @@ class DropdownDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="弹出位置">
+            <Card hoverable title="弹出位置">
               <Dropdown overlay={menu} placement="bottomLeft">
                 <Button>bottomLeft</Button>
               </Dropdown>{' '}

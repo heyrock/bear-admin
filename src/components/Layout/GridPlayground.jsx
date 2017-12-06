@@ -35,7 +35,7 @@ class GridPlayground extends React.Component {
     }
     return (
       <div>
-        <Row className="showcase">
+        <Row className="grid-demo">
           <Col span={24} id="components-grid-demo-playground">
             <div style={{ marginBottom: 16 }}>
               <span style={{ marginRight: 6 }}>Gutter (px): </span>

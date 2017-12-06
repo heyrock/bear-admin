@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'dva';
 import moment from 'moment';
-import { Row, Col, Card, Checkbox, Table, Input, Modal, Progress, Badge, Button, Dropdown, Icon, Menu, Tooltip, Popconfirm, message } from 'antd';
+import { Row, Col, Card, Checkbox, Table, Input, Modal, Progress, Badge, Button, Dropdown, Icon, Menu, Tooltip, Popconfirm, message, Divider } from 'antd';
 const Search = Input.Search;
 
 
@@ -72,13 +72,13 @@ const columns = [{
 }, {
   title: '操作',
   key: 'action',
-  width: 150,
+  width: 200,
   render: (text, record) => (
     <span>
       <a onClick={() => info(record.name)}>配置</a>
-      <span className="ant-divider" />
+      <Divider type="vertical" />
       <a onClick={() => subscription(record.state)}>订阅报警</a>
-      <span className="ant-divider" />
+      <Divider type="vertical" />
       <Popconfirm placement="left" title={`您确认删除 ${record.name} 应用`} okText="是" cancelText="否" onConfirm={() => { message.success('点击了是') }} onCancel={() => { message.error('点击了否') }}>
         <a>删除</a>
       </Popconfirm>
@@ -142,7 +142,7 @@ class CusTableDemo extends React.Component {
 
     return (
       <div>
-        <Card noHovering>
+        <Card hoverable>
           <Table {...extenProps} columns={columns} dataSource={data} />
         </Card>
       </div>

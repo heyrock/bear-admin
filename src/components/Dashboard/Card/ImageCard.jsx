@@ -16,7 +16,7 @@ class ImageCard extends React.Component {
                 <Col xs={12} sm={12} md={12} lg={8} xl={8} key={k}>
                   <Card
                     bordered={false}
-                    noHovering>
+                    hoverable>
                     <div className={'card-header'}>
                       <img src={require(`../../../assets/img/card-${v.image}.jpeg`)} alt="" />
                     </div>

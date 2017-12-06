@@ -12,24 +12,24 @@ class AutoCompleteDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Demo1 />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="自定义选项">
+            <Card hoverable title="自定义选项">
               <Demo2 />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="自定义输入组件">
+            <Card hoverable title="自定义输入组件">
               <Demo3 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="不区分大小写">
+            <Card hoverable title="不区分大小写">
               <AutoComplete
                 style={{ width: 200 }}
                 dataSource={['Burns Bay Road', 'Downing Street', 'Wall Street']}
@@ -39,12 +39,12 @@ class AutoCompleteDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="查询模式 - 确定类目">
+            <Card hoverable title="查询模式 - 确定类目">
               <Demo4 />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="查询模式 - 不确定类目">
+            <Card hoverable title="查询模式 - 不确定类目">
               <Demo5 />
             </Card>
           </Col>

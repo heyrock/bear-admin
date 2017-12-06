@@ -99,7 +99,7 @@ class BannerAnimDemo extends React.Component {
       <div>
         <Row gutter={16} style={{ marginBottom: '20px' }}>
           <Col className="gutter-row" span={12}>
-            <Card noHovering title="基本示例">
+            <Card hoverable title="基本示例">
               <BannerAnim prefixCls="banner-user" style={{ height: 220 }}>
                 <Element
                   prefixCls="banner-user-elem"
@@ -139,7 +139,7 @@ class BannerAnimDemo extends React.Component {
             </Card>
           </Col>
           <Col className="gutter-row" span={12}>
-            <Card noHovering title="自定义左右箭头与缩略图">
+            <Card hoverable title="自定义左右箭头与缩略图">
               <BannerAnim
                 onChange={this.onChange}
                 onMouseEnter={this.onMouseEnter}

@@ -12,7 +12,7 @@ class SelectDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Select defaultValue="lucy" style={{ width: 120 }}>
                 <Option value="jack">Jack</Option>
                 <Option value="lucy">Lucy</Option>
@@ -26,7 +26,7 @@ class SelectDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="带搜索框">
+            <Card hoverable title="带搜索框">
               <Select
                 showSearch
                 style={{ width: 200 }}
@@ -41,19 +41,19 @@ class SelectDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="标签">
+            <Card hoverable title="标签">
               <Demo1 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="多选">
+            <Card hoverable title="多选">
               <Demo2 />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="分组">
+            <Card hoverable title="分组">
               <Select
                 defaultValue="lucy"
                 style={{ width: 200 }}
@@ -69,31 +69,31 @@ class SelectDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="自动分词" extra="试下复制 “露西,杰克” 到输入框里">
+            <Card hoverable title="自动分词" extra="试下复制 “露西,杰克” 到输入框里">
               <Demo3 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="智能提示">
+            <Card hoverable title="智能提示">
               <Demo4 />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="联动">
+            <Card hoverable title="联动">
               <Demo5 />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="搜索用户" extra="一个带有远程搜索，加载状态的示例">
+            <Card hoverable title="搜索用户" extra="一个带有远程搜索，加载状态的示例">
               <Demo6 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="三种大小">
+            <Card hoverable title="三种大小">
               <Demo7 />
             </Card>
           </Col>

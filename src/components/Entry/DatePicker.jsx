@@ -14,7 +14,7 @@ class DatePickerDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <DatePicker />
               <br /><br />
               <MonthPicker placeholder="选择月份" />
@@ -23,7 +23,7 @@ class DatePickerDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="日期格式" extra="使用 format 属性，可以自定义日期显示格式">
+            <Card hoverable title="日期格式" extra="使用 format 属性，可以自定义日期显示格式">
               <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
               <br /><br />
               <MonthPicker defaultValue={moment('2015/01', monthFormat)} format={monthFormat} />
@@ -35,7 +35,7 @@ class DatePickerDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="禁用">
+            <Card hoverable title="禁用">
               <DatePicker defaultValue={moment('2015-06-06', dateFormat)} disabled />
               <br /><br />
               <MonthPicker defaultValue={moment('2015-06', 'YYYY-MM')} disabled />
@@ -49,7 +49,7 @@ class DatePickerDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="日期时间选择">
+            <Card hoverable title="日期时间选择">
               <DatePicker
                 showTime
                 format="YYYY-MM-DD HH:mm:ss"
@@ -64,12 +64,12 @@ class DatePickerDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="不可选择日期和时间">
+            <Card hoverable title="不可选择日期和时间">
               <Demo1 />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="额外的页脚">
+            <Card hoverable title="额外的页脚">
               <DatePicker renderExtraFooter={() => '额外的页脚'} />{' '}
               <DatePicker renderExtraFooter={() => '额外的页脚'} showTime />
               <br /><br />
@@ -81,12 +81,12 @@ class DatePickerDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="三种大小">
+            <Card hoverable title="三种大小">
               <Demo2 />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="自定义日期范围选择">
+            <Card hoverable title="自定义日期范围选择">
               <Demo3 />
             </Card>
           </Col>

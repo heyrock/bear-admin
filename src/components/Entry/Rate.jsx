@@ -9,29 +9,29 @@ class RateDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Rate />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="半星">
+            <Card hoverable title="半星">
               <Rate allowHalf defaultValue={2.5} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="文案展现">
+            <Card hoverable title="文案展现">
               <RaterDemo />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="只读">
+            <Card hoverable title="只读">
               <Rate disabled defaultValue={2} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="其他字符">
+            <Card hoverable title="其他字符">
               <Rate character={<Icon type="heart" />} allowHalf />
               <br />
               <Rate character="A" allowHalf style={{ fontSize: 36 }} />

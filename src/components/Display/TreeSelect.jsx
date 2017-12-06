@@ -30,17 +30,17 @@ class TreeSelectDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <BaseDemo />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="从数据直接生成">
+            <Card hoverable title="从数据直接生成">
               <FromDataDemo />
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="多选和勾选框功能">
+            <Card hoverable title="多选和勾选框功能">
               <MulDemo />
             </Card>
           </Col>

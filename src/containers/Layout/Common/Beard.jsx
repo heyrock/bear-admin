@@ -7,7 +7,7 @@ const BearBeard = ({ location }) => {
   location && location.pathname ? breads.push({name: location.pathname}) : '';
 
   return (
-    <div style={{ height: '60px', padding: '0 25px', lineHeight: '60px', marginBottom: '-25px' }}>
+    <div style={{ padding: '10px 25px 0px 25px', letterSpacing: '3px' }}>
       <span style={{ float: 'left' }}>
         <Icon type='home' />
       </span>

@@ -12,33 +12,33 @@ class BaseFormDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="水平登录栏">
+            <Card hoverable title="水平登录栏">
               <Demo1Form />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="登录框">
+            <Card hoverable title="登录框">
               <Demo2Form />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="注册新用户">
+            <Card hoverable title="注册新用户">
               <Demo3Form />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="高级搜索">
+            <Card hoverable title="高级搜索">
               <Demo4Form />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="动态增减表单项">
+            <Card hoverable title="动态增减表单项">
               <Demo5Form />
             </Card>
           </Col>

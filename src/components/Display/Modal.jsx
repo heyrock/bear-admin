@@ -9,24 +9,24 @@ class ModalDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <BaseDemo />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="异步关闭">
+            <Card hoverable title="异步关闭">
               <AsyncCloseDemo />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="自定义页脚">
+            <Card hoverable title="自定义页脚">
               <CustomFooterDemo />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="确认对话框" extra="使用 confirm() 可以快捷地弹出确认框">
+            <Card hoverable title="确认对话框" extra="使用 confirm() 可以快捷地弹出确认框">
               <Button onClick={() => {
                 Modal.confirm({
                   title: 'Do you Want to delete these items?',
@@ -46,7 +46,7 @@ class ModalDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="信息提示">
+            <Card hoverable title="信息提示">
               <Button onClick={() => {
                 Modal.info({
                   title: 'This is a notification message',
@@ -80,7 +80,7 @@ class ModalDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="自定义位置">
+            <Card hoverable title="自定义位置">
               <CustomPositionDemo />
             </Card>
           </Col>

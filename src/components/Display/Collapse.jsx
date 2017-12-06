@@ -22,7 +22,7 @@ class CollapseDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Collapse>
                 <Panel header="面板标题 1" key="1">
                   <p>{text}</p>
@@ -37,7 +37,7 @@ class CollapseDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="手风琴">
+            <Card hoverable title="手风琴">
               <Collapse accordion>
                 <Panel header={'面板标题 1'} key="1">
                   <p>{text}</p>
@@ -54,7 +54,7 @@ class CollapseDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="面板嵌套">
+            <Card hoverable title="面板嵌套">
               <Collapse>
                 <Panel header={'面板标题 1'} key="1">
                   <Collapse defaultActiveKey="1">
@@ -73,7 +73,7 @@ class CollapseDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="简洁风格">
+            <Card hoverable title="简洁风格">
               <Collapse bordered={false}>
                 <Panel header="面板标题 1" key="1">
                   <p>{text}</p>
@@ -90,7 +90,7 @@ class CollapseDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="自定义风格">
+            <Card hoverable title="自定义风格">
               <Collapse bordered={false} defaultActiveKey={['1']}>
                 <Panel header="面板标题 1" key="1" style={customPanelStyle}>
                   <p>{text}</p>

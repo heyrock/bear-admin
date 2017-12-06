@@ -49,7 +49,7 @@ class MenuDemo extends React.Component {
       <div>
         <Row gutter={32}>
           <Col span={12}>
-            <Card noHovering title="水平菜单，light 主题">
+            <Card hoverable title="水平菜单，light 主题">
               <Menu
                 onClick={this.handleClick}
                 selectedKeys={[this.state.current]}
@@ -78,7 +78,7 @@ class MenuDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="水平菜单，dark 主题">
+            <Card hoverable title="水平菜单，dark 主题">
               <Menu
                 onClick={this.handleClick}
                 selectedKeys={[this.state.current]}
@@ -110,7 +110,7 @@ class MenuDemo extends React.Component {
         </Row>
         <Row gutter={32} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="内嵌菜单">
+            <Card hoverable title="内嵌菜单">
               <Menu
                 onClick={this.handleClick}
                 style={{ width: 240 }}
@@ -146,7 +146,7 @@ class MenuDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="缩起内嵌菜单">
+            <Card hoverable title="缩起内嵌菜单">
               <div style={{ width: 240 }}>
                 <Button type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
                   <Icon type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} />
@@ -191,7 +191,7 @@ class MenuDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="只展开当前父级菜单">
+            <Card hoverable title="只展开当前父级菜单">
               <Menu
                 mode="inline"
                 openKeys={this.state.openKeys}
@@ -223,7 +223,7 @@ class MenuDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="垂直菜单">
+            <Card hoverable title="垂直菜单">
               <Menu style={{ width: 240 }} mode="vertical" theme="dark">
                 <SubMenu key="sub1" title={<span><Icon type="mail" /><span>收件箱</span></span>}>
                   <MenuItemGroup title="Item 1">

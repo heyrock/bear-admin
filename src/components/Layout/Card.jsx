@@ -67,7 +67,7 @@ class CardDemo extends React.Component {
         <Card loading title="预加载的卡片 - 数据读入前会有文本块样式" style={{ marginTop: '20px' }}>
           Whatever content
         </Card>
-        <Card title="网格型内嵌卡片" noHovering style={{ marginTop: '20px' }}>
+        <Card title="网格型内嵌卡片" hoverable style={{ marginTop: '20px' }}>
           <Card.Grid style={gridStyle}>卡片内容</Card.Grid>
           <Card.Grid style={gridStyle}>卡片内容</Card.Grid>
           <Card.Grid style={gridStyle}>卡片内容</Card.Grid>
@@ -78,7 +78,7 @@ class CardDemo extends React.Component {
         </Card>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={4}>
-            <Card bodyStyle={{ padding: 0 }} noHovering>
+            <Card bodyStyle={{ padding: 0 }} hoverable>
               <div>
                 <img style={{ display: 'block' }} alt="example" width="100%" src={imgsrc} />
               </div>
@@ -89,7 +89,7 @@ class CardDemo extends React.Component {
             </Card>
           </Col>
           <Col span={4}>
-            <Card bodyStyle={{ padding: 0 }} noHovering>
+            <Card bodyStyle={{ padding: 0 }} hoverable>
               <div>
                 <img style={{ display: 'block' }} alt="example" width="100%" src={imgsrc} />
               </div>
@@ -100,7 +100,7 @@ class CardDemo extends React.Component {
             </Card>
           </Col>
           <Col span={4}>
-            <Card bodyStyle={{ padding: 0 }} noHovering>
+            <Card bodyStyle={{ padding: 0 }} hoverable>
               <div>
                 <img style={{ display: 'block' }} alt="example" width="100%" src={imgsrc} />
               </div>
@@ -111,7 +111,7 @@ class CardDemo extends React.Component {
             </Card>
           </Col>
           <Col span={4}>
-            <Card bodyStyle={{ padding: 0 }} noHovering>
+            <Card bodyStyle={{ padding: 0 }} hoverable>
               <div>
                 <img style={{ display: 'block' }} alt="example" width="100%" src={imgsrc} />
               </div>
@@ -122,7 +122,7 @@ class CardDemo extends React.Component {
             </Card>
           </Col>
           <Col span={4}>
-            <Card bodyStyle={{ padding: 0 }} noHovering>
+            <Card bodyStyle={{ padding: 0 }} hoverable>
               <div>
                 <img style={{ display: 'block' }} alt="example" width="100%" src={imgsrc} />
               </div>
@@ -133,7 +133,7 @@ class CardDemo extends React.Component {
             </Card>
           </Col>
           <Col span={4}>
-            <Card bodyStyle={{ padding: 0 }} noHovering>
+            <Card bodyStyle={{ padding: 0 }} hoverable>
               <div>
                 <img style={{ display: 'block' }} alt="example" width="100%" src={imgsrc} />
               </div>

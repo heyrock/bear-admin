@@ -43,36 +43,13 @@ class About extends React.Component {
           <Icon type="smile-o" /> 格栅布局，fully responsive<br />
           <Icon type="smile-o" /> Code Splitting。开启 gzip，<a href="https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/filesize.png">首屏文件仅100多KB</a>，应用载入速度超快<br />
           <Icon type="smile-o" /> 高质量脚手架<br />
-          <Icon type="smile-o" /> eject 配置，按需定制<br />
+          <Icon type="smile-o" /> eject 配置，按需定制（OR <a href="https://github.com/timarney/react-app-rewired">override create-react-app webpack configs without ejecting</a>）<br />
           <Icon type="smile-o" /> 支持更多语言特性和 polyfills，发现更多，请访问 <a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#supported-language-features-and-polyfills">create-react-app</a> 官网<br />
         </p>
 
         <h3>开始</h3>
         <p>
-          1. 克隆源码
-          <Highlight innerHTML={false}>
-            git clone https://github.com/huzzbuzz/bear-admin.git
-          </Highlight>
-        </p>
-        <p>
-          2. 安装依赖
-          <Highlight innerHTML={false}>
-            cd bear-admin <br />
-            npm i or yarn
-          </Highlight>
-        </p>
-        <p>
-          3. 调试应用
-          <Highlight innerHTML={false}>
-            npm start
-          </Highlight>
-        </p>
-        <p>
-          4. 发布应用
-          <Highlight innerHTML={false}>
-            npm run build
-          </Highlight>
-          it will builds the app for production to the build folder. your app is ready to be deployed.
+          <a href="https://github.com/huzzbuzz/bear-admin#开始">开始</a>
         </p>
 
         <h3>更多</h3>

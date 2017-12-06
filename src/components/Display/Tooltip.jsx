@@ -11,14 +11,14 @@ class TooltipDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Tooltip title={"Prompt Text"}>
                 <span>Tooltip will show when mouse enter.</span>
               </Tooltip>
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="箭头指向">
+            <Card hoverable title="箭头指向">
               <Tooltip placement="topLeft" title="Prompt Text">
                 <Button>边缘对齐</Button>
               </Tooltip>{' '}
@@ -28,7 +28,7 @@ class TooltipDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="位置">
+            <Card hoverable title="位置">
               <div>
                 <div style={{ marginLeft: 60 }}>
                   <Tooltip placement="topLeft" title={text}>

@@ -60,12 +60,12 @@ class CheckBoxDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Checkbox>Checkbox</Checkbox>
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="受控的 Checkbox">
+            <Card hoverable title="受控的 Checkbox">
               <p style={{ marginBottom: '20px' }}>
                 <Checkbox
                   checked={this.state.checked}
@@ -97,7 +97,7 @@ class CheckBoxDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="全选">
+            <Card hoverable title="全选">
               <div style={{ borderBottom: '1px solid #E9E9E9' }}>
                 <Checkbox
                   indeterminate={this.state.indeterminate}
@@ -112,7 +112,7 @@ class CheckBoxDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="Checkbox 组">
+            <Card hoverable title="Checkbox 组">
               <CheckboxGroup options={plainOptions} defaultValue={['Apple']} />
               <br />
               <CheckboxGroup options={gropOptions} defaultValue={['Pear']} />

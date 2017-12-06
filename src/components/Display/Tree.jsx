@@ -10,24 +10,24 @@ class TreeDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <BaseDemo />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="拖动示例">
+            <Card hoverable title="拖动示例">
               <DragDemo />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="异步数据加载">
+            <Card hoverable title="异步数据加载">
               <AsyncDemo />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="连接线">
+            <Card hoverable title="连接线">
               <ShowLineDemo />
             </Card>
           </Col>

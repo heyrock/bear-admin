@@ -6,7 +6,7 @@ const NotFound = () =>
     <section>
       <h1>404</h1>
       <p>
-        未找到该页面{' '}返回<a href="#">{' '}BEAR ADMIN</a>
+        未找到该页面{' '} 返回 <a href="#">{' '}BEAR ADMIN</a>
       </p>
     </section>
   </div>;

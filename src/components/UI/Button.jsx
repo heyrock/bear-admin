@@ -10,7 +10,7 @@ class ButtonDemo extends React.Component {
       <div>
         <Row gutter={32}>
           <Col span={12}>
-            <Card noHovering title="Antd 标准按钮">
+            <Card hoverable title="Antd 标准按钮">
               <Button type="primary">主按钮</Button>{' '}
               <Button>次按钮</Button>{' '}
               <Button type="dashed">虚线按钮</Button>{' '}
@@ -18,7 +18,7 @@ class ButtonDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="Antd 图标按钮">
+            <Card hoverable title="Antd 图标按钮">
               <div>
                 <Button type="primary" shape="circle" icon="search" />{' '}
                 <Button type="primary" icon="search">搜索</Button>{' '}
@@ -36,7 +36,7 @@ class ButtonDemo extends React.Component {
         </Row>
         <Row gutter={32} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="Antd 按钮尺寸">
+            <Card hoverable title="Antd 按钮尺寸">
               <h2>Large</h2>
               <Button type="primary" shape="circle" icon="download" size="large" />{' '}
               <Button type="primary" icon="download" size="large">下载</Button>{' '}
@@ -76,7 +76,7 @@ class ButtonDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="Antd 按钮不可用、加载中状态">
+            <Card hoverable title="Antd 按钮不可用、加载中状态">
               <Button type="primary">主按钮</Button>{' '}
               <Button type="primary" disabled>主按钮(不可用)</Button>{' '}
               <Button type="primary" loading> 加载中</Button>{' '}
@@ -88,7 +88,7 @@ class ButtonDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="Antd 按钮组合">
+            <Card hoverable title="Antd 按钮组合">
               <h2>Basic</h2>
               <ButtonGroup>
                 <Button>Cancel</Button>
@@ -122,7 +122,7 @@ class ButtonDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="Antd 幽灵按钮">
+            <Card hoverable title="Antd 幽灵按钮">
               幽灵按钮将其他按钮的内容反色，背景变为透明，常用在有色背景上。
               <div style={{ background: 'rgb(190, 200, 200)', padding: '26px 16px 16px' }}>
                 <Button type="primary" ghost>主按钮</Button>{' '}

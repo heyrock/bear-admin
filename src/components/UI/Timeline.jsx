@@ -9,7 +9,7 @@ class TimelineDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Timeline>
                 <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
                 <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
@@ -19,7 +19,7 @@ class TimelineDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="圆圈颜色">
+            <Card hoverable title="圆圈颜色">
               <Timeline>
                 <Timeline.Item color="green">Create a services site 2015-09-01</Timeline.Item>
                 <Timeline.Item color="green">Create a services site 2015-09-01</Timeline.Item>
@@ -39,7 +39,7 @@ class TimelineDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="最后一个">
+            <Card hoverable title="最后一个">
               <Timeline pending={<a>See more</a>}>
                 <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
                 <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
@@ -48,7 +48,7 @@ class TimelineDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="自定义时间轴点">
+            <Card hoverable title="自定义时间轴点">
               <Timeline>
                 <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
                 <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>

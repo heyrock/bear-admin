@@ -9,24 +9,24 @@ class TransferDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Demo1 />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="带搜索框的穿梭框">
+            <Card hoverable title="带搜索框的穿梭框">
               <Demo2 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="高级" extra="可配置操作文案，可定制宽高，可对底部进行自定义渲染">
+            <Card hoverable title="高级" extra="可配置操作文案，可定制宽高，可对底部进行自定义渲染">
               <Demo3 />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="自定义渲染行数据">
+            <Card hoverable title="自定义渲染行数据">
               <Demo4 />
             </Card>
           </Col>

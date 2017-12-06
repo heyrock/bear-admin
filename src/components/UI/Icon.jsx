@@ -27,7 +27,7 @@ class IconDemo extends React.Component {
       <div>
         <Row>
           <Col span={24}>
-            <Card noHovering title="Antd Icons">
+            <Card hoverable title="Antd Icons">
               <ul className="icon-list">
                 {
                   this.icons.map((type, k) =>
@@ -41,7 +41,7 @@ class IconDemo extends React.Component {
         </Row>
         <Row style={{ marginTop: 20 }}>
           <Col span={24}>
-            <Card noHovering title="其他 Icons">
+            <Card hoverable title="其他 Icons">
               <ul className="icon-list">
                 {
                   this.svgIcons.map((type, k) =>

@@ -29,7 +29,7 @@ class EMail extends React.Component {
           <Col span={24}>
             <Row>
               <Col sm={24} md={6} lg={6} xl={6}>
-                <Card noHovering>
+                <Card hoverable>
                   <Button type="primary" className="add-mail" icon="edit" onClick={() => this.handleSelect('add', '新建电子邮件')}>新建邮件 </Button>
                   <div className="left-panel">
                     <ul className="mail-nav">
@@ -124,7 +124,7 @@ const Inbox = ({ selectKey, title }) => {
 
   return (
     <div>
-      <Card noHovering>
+      <Card hoverable>
         <h4 style={{ fontSize: 20, color: '#a2a2a2', marginBottom: 20 }}>{title}</h4>
         <Table
           title={() => <div>
@@ -166,7 +166,7 @@ const Add = ({ title, onBack }) => {
 
   return (
     <div className="add">
-      <Card noHovering>
+      <Card hoverable>
         <h4 style={{ fontSize: 20, color: '#a2a2a2', marginBottom: 20 }}>{title}</h4>
         <Row className="header">
           <Col>
@@ -240,7 +240,7 @@ const Add = ({ title, onBack }) => {
 const Other = ({ title }) => {
   return (
     <div>
-      <Card noHovering>
+      <Card hoverable>
         <h4 style={{ fontSize: 20, color: '#a2a2a2', marginBottom: 20 }}>{title}</h4>
         <div style={{ minHeight: 300 }}>
           待续...

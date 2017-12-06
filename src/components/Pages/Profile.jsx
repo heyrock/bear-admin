@@ -29,7 +29,7 @@ const Profile = () => {
           </div>
           <Row gutter={40}>
             <Col span={12}>
-              <Card noHovering bodyStyle={{ padding: 0 }}>
+              <Card hoverable bodyStyle={{ padding: 0 }}>
                 <div className="custom-image">
                   <img alt="example" width="100%" src={postImg} />
                 </div>
@@ -40,7 +40,7 @@ const Profile = () => {
               </Card>
             </Col>
             <Col span={12}>
-              <Card noHovering bodyStyle={{ padding: 0 }}>
+              <Card hoverable bodyStyle={{ padding: 0 }}>
                 <div className="custom-image">
                   <img alt="example" width="100%" src={post2Img} />
                 </div>
@@ -53,7 +53,7 @@ const Profile = () => {
           </Row>
           <Row gutter={40} style={{ marginTop: 20 }}>
             <Col span={12}>
-              <Card noHovering bodyStyle={{ padding: 0 }}>
+              <Card hoverable bodyStyle={{ padding: 0 }}>
                 <div className="custom-image">
                   <img alt="example" width="100%" src={post3Img} />
                 </div>

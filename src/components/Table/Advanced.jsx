@@ -20,63 +20,63 @@ class TableAdvancedDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="树形数据展示">
+            <Card hoverable title="树形数据展示">
               <Demo1 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="筛选和排序">
+            <Card hoverable title="筛选和排序">
               <Demo2 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="固定表头">
+            <Card hoverable title="固定表头">
               <Demo3 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="固定列">
+            <Card hoverable title="固定列">
               <Demo5 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="固定头和列">
+            <Card hoverable title="固定头和列">
               <Demo6 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="表格行/列合并">
+            <Card hoverable title="表格行/列合并">
               <Demo4 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="表头分组">
+            <Card hoverable title="表头分组">
               <Demo7 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="嵌套子表格">
+            <Card hoverable title="嵌套子表格">
               <Demo8 />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title={<h3 style={{ color: 'red' }}>远程加载数据</h3>}>
+            <Card hoverable title={<h3 style={{ color: 'red' }}>远程加载数据</h3>}>
               <p>
                 <b>通过简单的 ajax 方式，演示如何从服务端读取并展现数据，具有筛选、排序等功能以及页面 loading 效果。
                   示例使用 <a href="https://randomuser.me/api">模拟接口</a>。

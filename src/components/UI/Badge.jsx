@@ -37,7 +37,7 @@ class BadgeDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Badge count={5}>
                 <span style={head_example}></span>
               </Badge>
@@ -48,7 +48,7 @@ class BadgeDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="封顶数字">
+            <Card hoverable title="封顶数字">
               <Badge count={99}>
                 <span style={head_example}></span>
               </Badge>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -64,7 +64,7 @@ class BadgeDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="可点击">
+            <Card hoverable title="可点击">
               <a>
                 <Badge count={5}>
                   <span style={head_example} />
@@ -75,7 +75,7 @@ class BadgeDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="独立使用">
+            <Card hoverable title="独立使用">
               <Badge count={25} />
               &nbsp;&nbsp;&nbsp;&nbsp;
               <Badge count={4} style={{ backgroundColor: '#fff', color: '#999', boxShadow: '0 0 0 1px #d9d9d9 inset' }} />{' '}
@@ -84,7 +84,7 @@ class BadgeDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="讨嫌的小红点">
+            <Card hoverable title="讨嫌的小红点">
               <Badge dot>
                 <Icon type="notification" />
               </Badge>
@@ -95,7 +95,7 @@ class BadgeDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="动态">
+            <Card hoverable title="动态">
               <div>
                 <Badge count={this.state.count}>
                   <span style={head_example}></span>
@@ -122,7 +122,7 @@ class BadgeDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="状态点">
+            <Card hoverable title="状态点">
               <Badge status="success" />
               <Badge status="error" />
               <Badge status="default" />

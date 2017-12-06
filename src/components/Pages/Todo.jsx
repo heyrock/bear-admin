@@ -83,7 +83,7 @@ class Todo extends React.Component {
       title: '时间',
       dataIndex: 'datetime',
       key: 'datetime',
-      width: 150,
+      width: 180,
       render: (text, record, index) => (
         <div style={{ textAlign: 'left' }} onMouseEnter={() => this.onTableRowHover(index)}>
           {record.isread ? <Badge status="default" text="已读" /> : <Badge status="processing" text='未读' />}
@@ -104,7 +104,7 @@ class Todo extends React.Component {
         <Row>
           <Col span={24}>
             <Card
-              noHovering
+              hoverable
               bordered={false}
               extra={<div><Search
                 placeholder="搜索"

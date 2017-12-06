@@ -9,7 +9,7 @@ class BreadcrumbDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Breadcrumb>
                 <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item><a href="">Application Center</a></Breadcrumb.Item>
@@ -19,7 +19,7 @@ class BreadcrumbDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="带有图标的">
+            <Card hoverable title="带有图标的">
               <Breadcrumb>
                 <Breadcrumb.Item href="">
                   <Icon type="home" />
@@ -35,7 +35,7 @@ class BreadcrumbDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="分隔符">
+            <Card hoverable title="分隔符">
               <Breadcrumb separator=">">
                 <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="">Application Center</Breadcrumb.Item>

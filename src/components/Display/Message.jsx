@@ -9,14 +9,14 @@ class MessageDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="普通提示">
+            <Card hoverable title="普通提示">
               <Button type="primary" onClick={() => {
                 message.info('This is a normal message');
               }}>显示消息提示</Button>
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="其他提示类型">
+            <Card hoverable title="其他提示类型">
               <Button onClick={() => {
                 message.success('This is a message of success');
               }}>成功</Button>{' '}
@@ -31,14 +31,14 @@ class MessageDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="修改延时" extra="自定义时长 10s，默认时长为 3s">
+            <Card hoverable title="修改延时" extra="自定义时长 10s，默认时长为 3s">
               <Button onClick={() => {
                 message.success('This is a prompt message for success, and it will disappear in 10 seconds', 10);
               }}>自定义显示时长</Button>
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="加载中">
+            <Card hoverable title="加载中">
               <Button onClick={() => {
                 const hide = message.loading('Action in progress..', 0);
                 // Dismiss manually and asynchronously

@@ -23,7 +23,7 @@ class NotificationDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Button type="primary" onClick={() => {
                 notification.open({
                   message: title,
@@ -33,7 +33,7 @@ class NotificationDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="带有图标的通知提醒框">
+            <Card hoverable title="带有图标的通知提醒框">
               <Button onClick={() => openNotificationWithIcon('success')}>成功</Button>{' '}
               <Button onClick={() => openNotificationWithIcon('info')}>信息</Button>{' '}
               <Button onClick={() => openNotificationWithIcon('warning')}>警告</Button>{' '}
@@ -41,7 +41,7 @@ class NotificationDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="自定义图标">
+            <Card hoverable title="自定义图标">
               <Button type="primary" onClick={() => {
                 notification.open({
                   message: title,
@@ -54,7 +54,7 @@ class NotificationDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="自定义样式">
+            <Card hoverable title="自定义样式">
               <Button type="primary" onClick={() => {
                 notification.open({
                   message: title,
@@ -68,7 +68,7 @@ class NotificationDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="自动关闭的延时">
+            <Card hoverable title="自动关闭的延时">
               <Button type="primary" onClick={() => {
                 const args = {
                   message: title,
@@ -80,7 +80,7 @@ class NotificationDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="自定义按钮">
+            <Card hoverable title="自定义按钮">
               <Button type="primary" onClick={() => {
                 const key = `open${Date.now()}`;
                 const btnClick = function () {
@@ -105,7 +105,7 @@ class NotificationDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="位置">
+            <Card hoverable title="位置">
               <Select
                 defaultValue="topRight"
                 style={{ width: 120, marginRight: 10 }}

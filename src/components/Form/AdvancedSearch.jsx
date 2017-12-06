@@ -12,14 +12,14 @@ class SearchDemo extends React.Component {
       <div>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="交互示例1">
+            <Card hoverable title="交互示例1">
               <Demo1 />
             </Card>
           </Col>
         </Row>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="交互示例2">
+            <Card hoverable title="交互示例2">
               <Demo2 />
             </Card>
           </Col>

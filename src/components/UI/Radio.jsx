@@ -35,12 +35,12 @@ class RadioDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Radio>Radio</Radio>
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="单选组合">
+            <Card hoverable title="单选组合">
               <RadioGroup onChange={this.onChange} value={this.state.value}>
                 <Radio value={1}>A</Radio>
                 <Radio value={2}>B</Radio>
@@ -50,7 +50,7 @@ class RadioDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="不可用">
+            <Card hoverable title="不可用">
               <Radio defaultChecked={false} disabled={this.state.disabled}>Disabled</Radio>
               <br />
               <Radio defaultChecked disabled={this.state.disabled}>Disabled</Radio>
@@ -64,7 +64,7 @@ class RadioDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="大小">
+            <Card hoverable title="大小">
               <div>
                 <RadioGroup defaultValue="a" size="large">
                   <RadioButton value="a">杭州</RadioButton>
@@ -92,7 +92,7 @@ class RadioDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="按钮样式">
+            <Card hoverable title="按钮样式">
               <div>
                 <RadioGroup defaultValue="a">
                   <RadioButton value="a">杭州</RadioButton>
@@ -120,7 +120,7 @@ class RadioDemo extends React.Component {
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="RadioGroup 垂直">
+            <Card hoverable title="RadioGroup 垂直">
               <RadioGroup onChange={this.onChange} value={this.state.value}>
                 <Radio style={radioStyle} value={1}>Option A</Radio>
                 <Radio style={radioStyle} value={2}>Option B</Radio>

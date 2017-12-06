@@ -9,7 +9,7 @@ class AffixDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Affix>
                 <Button type="primary">Affix top</Button>
               </Affix>
@@ -20,7 +20,7 @@ class AffixDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="固定状态改变的回调">
+            <Card hoverable title="固定状态改变的回调">
               <Affix offsetTop={120} onChange={affixed => console.log(affixed)}>
                 <Button>120px to affix top</Button>
               </Affix>

@@ -82,21 +82,21 @@ class CalendarDemo extends React.Component {
       <div>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="基本" extra="一个通用的日历面板，支持年/月切换">
+            <Card hoverable title="基本" extra="一个通用的日历面板，支持年/月切换">
               <Calendar />
             </Card>
           </Col>
         </Row>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="通知事项日历" extra="一个复杂的应用示例，用 dateCellRender 和 monthCellRender 函数来自定义需要渲染的数据">
+            <Card hoverable title="通知事项日历" extra="一个复杂的应用示例，用 dateCellRender 和 monthCellRender 函数来自定义需要渲染的数据">
               <Calendar dateCellRender={this.dateCellRender} monthCellRender={this.monthCellRender} />
             </Card>
           </Col>
         </Row>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="选择功能" extra="一个通用的日历面板，支持年/月切换">
+            <Card hoverable title="选择功能" extra="一个通用的日历面板，支持年/月切换">
               <Alert message={`你选择的时间是： ${selectedValue && selectedValue.format('YYYY年MM月DD日')}`} />
               <Calendar value={value} onSelect={this.onSelect} onPanelChange={this.onPanelChange} />
             </Card>
@@ -104,14 +104,14 @@ class CalendarDemo extends React.Component {
         </Row>
         <Row gutter={16} style={{ marginTop: '20px' }}>
           <Col span={8}>
-            <Card noHovering title="卡片模式-中文">
+            <Card hoverable title="卡片模式-中文">
               <div style={{ width: 290, border: '1px solid #d9d9d9', borderRadius: 4 }}>
                 <Calendar fullscreen={false} />
               </div>
             </Card>
           </Col>
           <Col span={8}>
-            <Card noHovering title="卡片模式-English">
+            <Card hoverable title="卡片模式-English">
               <div style={{ width: 290, border: '1px solid #d9d9d9', borderRadius: 4 }}>
                 <LocaleProvider locale={enUS}>
                   <EnglishCalen />

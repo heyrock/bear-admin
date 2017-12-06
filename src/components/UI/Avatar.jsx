@@ -24,7 +24,7 @@ class AvatarDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <div>
                 <Avatar size="large" icon="user" />{' '}
                 <Avatar icon="user" />{' '}
@@ -38,7 +38,7 @@ class AvatarDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="类型">
+            <Card hoverable title="类型">
               <Avatar icon="user" />{' '}
               <Avatar>U</Avatar>{' '}
               <Avatar>USER</Avatar>{' '}
@@ -51,7 +51,7 @@ class AvatarDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="带徽标的头像">
+            <Card hoverable title="带徽标的头像">
               <span style={{ marginRight: 24 }}>
                 <Badge count={1}><Avatar shape="square" icon="user" /></Badge>
               </span>
@@ -61,7 +61,7 @@ class AvatarDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="自动调整字符大小">
+            <Card hoverable title="自动调整字符大小">
               <Avatar style={{ backgroundColor: this.state.color }} size="large">{this.state.user}</Avatar>
               <Button size="small" style={{ marginLeft: 16 }} onClick={this.changeUser}>Change</Button>
             </Card>

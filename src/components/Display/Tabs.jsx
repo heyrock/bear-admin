@@ -11,7 +11,7 @@ class TagsDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Tabs defaultActiveKey="1">
                 <TabPane tab="Tab 1" key="1">Content of Tab Pane 1</TabPane>
                 <TabPane tab="Tab 2" key="2">Content of Tab Pane 2</TabPane>
@@ -20,7 +20,7 @@ class TagsDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="禁用某一项">
+            <Card hoverable title="禁用某一项">
               <Tabs defaultActiveKey="1">
                 <TabPane tab="Tab 1" key="1">Tab 1</TabPane>
                 <TabPane tab="Tab 2" disabled key="2">Tab 2</TabPane>
@@ -31,7 +31,7 @@ class TagsDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="有图标的标签">
+            <Card hoverable title="有图标的标签">
               <Tabs defaultActiveKey="2">
                 <TabPane tab={<span><Icon type="apple" />Tab 1</span>} key="1">
                   Tab 1
@@ -43,14 +43,14 @@ class TagsDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="可以左右、上下滑动，容纳更多标签">
+            <Card hoverable title="可以左右、上下滑动，容纳更多标签">
               <SlidingTabsDemo />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="可以在页签右边添加附加操作">
+            <Card hoverable title="可以在页签右边添加附加操作">
               <Tabs tabBarExtraContent={<Button>Extra Action</Button>}>
                 <TabPane tab="Tab 1" key="1">Content of tab 1</TabPane>
                 <TabPane tab="Tab 2" key="2">Content of tab 2</TabPane>
@@ -59,19 +59,19 @@ class TagsDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="位置">
+            <Card hoverable title="位置">
               <PositionDemo />
             </Card>
           </Col>
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="新增和关闭页签">
+            <Card hoverable title="新增和关闭页签">
               <CloseOrAddDemo />
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="自定义新增页签触发器">
+            <Card hoverable title="自定义新增页签触发器">
               <CustomDemo />
             </Card>
           </Col>

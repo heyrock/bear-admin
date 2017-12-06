@@ -66,7 +66,7 @@ class TagDemo extends React.Component {
       <div>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="基本">
+            <Card hoverable title="基本">
               <Tag>Tag 1</Tag>{' '}
               <Tag><a href="https://github.com/ant-design/ant-design/issues/1862">Link</a></Tag>{' '}
               <Tag closable>Tag 2</Tag>{' '}
@@ -74,7 +74,7 @@ class TagDemo extends React.Component {
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="动态添加和删除">
+            <Card hoverable title="动态添加和删除">
               {tags.map((tag, index) => {
                 const isLongTag = tag.length > 20;
                 const tagElem = (
@@ -102,14 +102,14 @@ class TagDemo extends React.Component {
         </Row>
         <Row gutter={8} style={{ marginTop: '20px' }}>
           <Col span={12}>
-            <Card noHovering title="可选择">
+            <Card hoverable title="可选择">
               <MyTag>Tag1</MyTag>{' '}
               <MyTag>Tag2</MyTag>{' '}
               <MyTag>Tag3</MyTag>{' '}
             </Card>
           </Col>
           <Col span={12}>
-            <Card noHovering title="热门标签">
+            <Card hoverable title="热门标签">
               <strong style={{ marginRight: 8 }}>选择分类:</strong>
               {tagsFromServer.map(tag => (
                 <CheckableTag
@@ -125,7 +125,7 @@ class TagDemo extends React.Component {
         </Row>
         <Row style={{ marginTop: '20px' }}>
           <Col span={24}>
-            <Card noHovering title="多彩标签">
+            <Card hoverable title="多彩标签">
               <h4 style={{ marginBottom: 16 }}>系统预设:</h4>
               <div>
                 <Tag color="pink">pink</Tag>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Table, Icon, Switch, Radio, Form } from 'antd';
+import { Card, Table, Icon, Switch, Radio, Form, Divider } from 'antd';
 const FormItem = Form.Item;
 
 const columns = [{
@@ -24,9 +24,9 @@ const columns = [{
   render: (text, record) => (
     <span>
       <a>Action 一 {record.name}</a>
-      <span className="ant-divider" />
+      <Divider type="vertical" />
       <a>Delete</a>
-      <span className="ant-divider" />
+      <Divider type="vertical" />
       <a className="ant-dropdown-link">
         More actions <Icon type="down" />
       </a>
@@ -103,7 +103,7 @@ class TableDemo extends React.Component {
     const state = this.state;
     return (
       <div>
-        <Card noHovering>
+        <Card hoverable>
           <Form layout="inline">
             <FormItem label="Bordered">
               <Switch checked={state.bordered} onChange={this.handleToggle('bordered')} />
@@ -142,7 +142,7 @@ class TableDemo extends React.Component {
           </Form>
         </Card>
         <br />
-        <Card noHovering>
+        <Card hoverable>
           <Table {...this.state} columns={columns} dataSource={data} />
         </Card>
       </div>
