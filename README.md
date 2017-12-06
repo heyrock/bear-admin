@@ -5,9 +5,9 @@
 <!--[![](https://travis-ci.org/huzzbuzz/bear-admin.svg?branch=master)](https://travis-ci.org/huzzbuzz/bear-admin)-->        
 
 [![create-react-app](https://img.shields.io/badge/create--react--app-%5E1.0.13-3b5998.svg)](https://github.com/facebookincubator/create-react-app)
-[![React](https://img.shields.io/badge/react-%5E15.6.1-brightgreen.svg?style=flat-square)](https://github.com/facebook/react)
-[![Ant Design](https://img.shields.io/badge/ant--design-%5E2.13.3-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
-[![dva](https://img.shields.io/badge/dva-%5E2.0.3-brightgreen.svg)](https://github.com/dvajs/dva)             
+[![React](https://img.shields.io/badge/react-%5E16.2.0-brightgreen.svg?style=flat-square)](https://github.com/facebook/react)
+[![Ant Design](https://img.shields.io/badge/ant--design-%5E3.0.0-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
+[![dva](https://img.shields.io/badge/dva-%5E2.1.0-brightgreen.svg)](https://github.com/dvajs/dva)             
 
 
 ## [预览 Preview](http://huzzbuzz.coding.me/bear-admin/)
@@ -38,7 +38,7 @@ Bear Admin 同时也是个很好的前端脚手架学习示例，如果你在学
  :yum:格栅布局，fully responsive       
  :yum:Code Splitting。开启 gzip，[首屏文件仅100多KB](https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/filesize.png)，应用载入速度超快                
  :yum:高质量脚手架                 
- :yum:eject create-react-app 配置，按需定制                     
+ :yum:eject create-react-app 配置，按需定制（OR [override create-react-app webpack configs without ejecting](https://github.com/timarney/react-app-rewired)）                     
  :yum:支持更多语言特性和 polyfills，发现更多，请访问 [create-react-app](https://github.com/facebookincubator/create-react-app) 官网
 
 #### 开始
@@ -80,7 +80,7 @@ npm run build
 #### 致谢     
 create-react-app      
 react 全家桶     
-antd 全家桶      
+antd 全家桶       
 
 :heartbeat::heartbeat: 欢迎 star 支持 :heartbeat::heartbeat: 
 
