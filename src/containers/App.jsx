@@ -10,8 +10,8 @@ class App extends React.Component {
 
   render() {
 
-    const { app } = this.props;
-    const { menuMode, fakeGlobal } = app;
+    const { global } = this.props;
+    const { menuMode, fakeGlobal } = global;
 
     return (
       <div>
@@ -28,4 +28,4 @@ class App extends React.Component {
   }
 }
 
-export default withRouter(connect(({ app }) => ({ app }))(App));
+export default withRouter(connect(({ global }) => ({ global }))(App));

@@ -136,8 +136,8 @@ class CusTableDemo extends React.Component {
   }
 
   render() {
-    const { app } = this.props;
-    const { siderRespons } = app;
+    const { global } = this.props;
+    const { siderRespons } = global;
     const extenProps = siderRespons ? Object.assign(this.state, { scroll: { x: 1300 } }) : this.state;
 
     return (
@@ -151,7 +151,7 @@ class CusTableDemo extends React.Component {
 }
 
 CusTableDemo.propTypes = {
-  app: PropTypes.object,
+  global: PropTypes.object,
 }
 
-export default connect(({ app }) => ({ app }))(CusTableDemo);
+export default connect(({ global }) => ({ global }))(CusTableDemo);

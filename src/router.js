@@ -6,7 +6,7 @@ import { LocaleProvider, Spin } from 'antd';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 
 import App from './containers/App';
-import NotFound from './containers/NotFound/NotFound';
+import NotFound from './routes/NotFound/NotFound';
 
 dynamic.setDefaultLoadingComponent(() => {
   return <Spin size="large" className="globalSpin" />;
@@ -16,271 +16,271 @@ const Routers = function ({ history, app }) {
   const routes = [
     {
       path: '/dashboard1',
-      component: () => import('./components/Dashboard/Dashboard1'),
+      component: () => import('./routes/Dashboard/Dashboard1'),
     },
     {
       path: '/dashboard2',
-      component: () => import('./components/Dashboard/Dashboard2'),
+      component: () => import('./routes/Dashboard/Dashboard2'),
     },
     {
       path: '/mail',
-      component: () => import('./components/Mail/Mail'),
+      component: () => import('./routes/Mail/Mail'),
     },
     {
       path: '/profile',
-      component: () => import('./components/Pages/Profile'),
+      component: () => import('./routes/Pages/Profile'),
     },
     {
       path: '/blank',
-      component: () => import('./components/Pages/Blank'),
+      component: () => import('./routes/Pages/Blank'),
     },
     {
       path: '/login',
-      component: () => import('./components/Pages/Login'),
+      component: () => import('./routes/Pages/Login'),
     },
     {
       path: '/signup',
-      component: () => import('./components/Pages/Signup'),
+      component: () => import('./routes/Pages/Signup'),
     },
     {
       path: '/lock',
-      component: () => import('./components/Pages/Lock'),
+      component: () => import('./routes/Pages/Lock'),
     },
     {
       path: '/todo',
-      component: () => import('./components/Pages/Todo'),
+      component: () => import('./routes/Pages/Todo'),
     },
     {
       path: '/affix',
-      component: () => import('./components/Navigation/Affix')
+      component: () => import('./routes/Navigation/Affix')
     },
     {
       path: '/pagination',
-      component: () => import('./components/Navigation/Pagination')
+      component: () => import('./routes/Navigation/Pagination')
     },
     {
       path: '/breadcrumb',
-      component: () => import('./components/Navigation/Breadcrumb')
+      component: () => import('./routes/Navigation/Breadcrumb')
     },
     {
       path: '/steps',
-      component: () => import('./components/Navigation/Steps')
+      component: () => import('./routes/Navigation/Steps')
     },
     {
       path: '/avatar',
-      component: () => import('./components/UI/Avatar')
+      component: () => import('./routes/UI/Avatar')
     },
     {
       path: '/button',
-      component: () => import('./components/UI/Button')
+      component: () => import('./routes/UI/Button')
     },
     {
       path: '/icon',
-      component: () => import('./components/UI/Icon')
+      component: () => import('./routes/UI/Icon')
     },
     {
       path: '/tag',
-      component: () => import('./components/UI/Tag')
+      component: () => import('./routes/UI/Tag')
     },
     {
       path: '/switch',
-      component: () => import('./components/UI/Switch')
+      component: () => import('./routes/UI/Switch')
     },
     {
       path: '/calendar',
-      component: () => import('./components/UI/Calendar')
+      component: () => import('./routes/UI/Calendar')
     },
     {
       path: '/checkbox',
-      component: () => import('./components/UI/Checkbox')
+      component: () => import('./routes/UI/Checkbox')
     },
     {
       path: '/radio',
-      component: () => import('./components/UI/Radio')
+      component: () => import('./routes/UI/Radio')
     },
     {
       path: '/input',
-      component: () => import('./components/UI/Input')
+      component: () => import('./routes/UI/Input')
     },
     {
       path: '/timeline',
-      component: () => import('./components/UI/Timeline')
+      component: () => import('./routes/UI/Timeline')
     },
     {
       path: '/badge',
-      component: () => import('./components/UI/Badge')
+      component: () => import('./routes/UI/Badge')
     },
     {
       path: '/slider',
-      component: () => import('./components/UI/Slider')
+      component: () => import('./routes/UI/Slider')
     },
     {
       path: '/popconfirm',
-      component: () => import('./components/Display/Popconfirm')
+      component: () => import('./routes/Display/Popconfirm')
     },
     {
       path: '/popover',
-      component: () => import('./components/Display/Popover')
+      component: () => import('./routes/Display/Popover')
     },
     {
       path: '/notification',
-      component: () => import('./components/Display/Notification')
+      component: () => import('./routes/Display/Notification')
     },
     {
       path: '/message',
-      component: () => import('./components/Display/Message')
+      component: () => import('./routes/Display/Message')
     },
     {
       path: '/alert',
-      component: () => import('./components/Display/Alert')
+      component: () => import('./routes/Display/Alert')
     },
     {
       path: '/tooltip',
-      component: () => import('./components/Display/Tooltip')
+      component: () => import('./routes/Display/Tooltip')
     },
     {
       path: '/collapse',
-      component: () => import('./components/Display/Collapse')
+      component: () => import('./routes/Display/Collapse')
     },
     {
       path: '/tree',
-      component: () => import('./components/Display/Tree')
+      component: () => import('./routes/Display/Tree')
     },
     {
       path: '/treeselect',
-      component: () => import('./components/Display/TreeSelect')
+      component: () => import('./routes/Display/TreeSelect')
     },
     {
       path: '/modal',
-      component: () => import('./components/Display/Modal')
+      component: () => import('./routes/Display/Modal')
     },
     {
       path: '/tabs',
-      component: () => import('./components/Display/Tabs')
+      component: () => import('./routes/Display/Tabs')
     },
     {
       path: '/carousel',
-      component: () => import('./components/Display/Carousel')
+      component: () => import('./routes/Display/Carousel')
     },
     {
       path: '/progress',
-      component: () => import('./components/Display/Progress')
+      component: () => import('./routes/Display/Progress')
     },
     {
       path: '/mention',
-      component: () => import('./components/Entry/Mention')
+      component: () => import('./routes/Entry/Mention')
     },
     {
       path: '/rate',
-      component: () => import('./components/Entry/Rate')
+      component: () => import('./routes/Entry/Rate')
     },
     {
       path: '/select',
-      component: () => import('./components/Entry/Select')
+      component: () => import('./routes/Entry/Select')
     },
     {
       path: '/transfer',
-      component: () => import('./components/Entry/Transfer')
+      component: () => import('./routes/Entry/Transfer')
     },
     {
       path: '/dropdown',
-      component: () => import('./components/Entry/Dropdown')
+      component: () => import('./routes/Entry/Dropdown')
     },
     {
       path: '/autocomplete',
-      component: () => import('./components/Entry/AutoComplete')
+      component: () => import('./routes/Entry/AutoComplete')
     },
     {
       path: '/cascader',
-      component: () => import('./components/Entry/Cascader')
+      component: () => import('./routes/Entry/Cascader')
     },
     {
       path: '/datepicker',
-      component: () => import('./components/Entry/DatePicker')
+      component: () => import('./routes/Entry/DatePicker')
     },
     {
       path: '/timepicker',
-      component: () => import('./components/Entry/TimePicker')
+      component: () => import('./routes/Entry/TimePicker')
     },
     {
       path: '/baseform',
-      component: () => import('./components/Form/BaseForm')
+      component: () => import('./routes/Form/BaseForm')
     },
     {
       path: '/advancedform',
-      component: () => import('./components/Form/AdvancedForm')
+      component: () => import('./routes/Form/AdvancedForm')
     },
     {
       path: '/advancedsearch',
-      component: () => import('./components/Form/AdvancedSearch')
+      component: () => import('./routes/Form/AdvancedSearch')
     },
     {
       path: '/basetable',
-      component: () => import('./components/Table/BaseTable')
+      component: () => import('./routes/Table/BaseTable')
     },
     {
       path: '/advanced',
-      component: () => import('./components/Table/Advanced')
+      component: () => import('./routes/Table/Advanced')
     },
     {
       path: '/playground',
-      component: () => import('./components/Table/Playground')
+      component: () => import('./routes/Table/Playground')
     },
     {
       path: '/custable',
-      component: () => import('./components/Table/CusTable')
+      component: () => import('./routes/Table/CusTable')
     },
     {
       path: '/grid',
-      component: () => import('./components/Layout/Grid')
+      component: () => import('./routes/Layout/Grid')
     },
     {
       path: '/gridplayground',
-      component: () => import('./components/Layout/GridPlayground')
+      component: () => import('./routes/Layout/GridPlayground')
     },
     {
       path: '/layout',
-      component: () => import('./components/Layout/Layout')
+      component: () => import('./routes/Layout/Layout')
     },
     {
       path: '/card',
-      component: () => import('./components/Layout/Card')
+      component: () => import('./routes/Layout/Card')
     },
     {
       path: '/menu',
-      component: () => import('./components/Layout/Menu')
+      component: () => import('./routes/Layout/Menu')
     },
     {
       path: '/logogather',
-      component: () => import('./components/AntMotion/LogoGather')
+      component: () => import('./routes/AntMotion/LogoGather')
     },
     {
       path: '/tableanim',
-      component: () => import('./components/AntMotion/TableAnim')
+      component: () => import('./routes/AntMotion/TableAnim')
     },
     {
       path: '/listanim',
-      component: () => import('./components/AntMotion/ListAnim')
+      component: () => import('./routes/AntMotion/ListAnim')
     },
     {
       path: '/detailswitch',
-      component: () => import('./components/AntMotion/DetailSwitch')
+      component: () => import('./routes/AntMotion/DetailSwitch')
     },
     {
       path: '/listsort',
-      component: () => import('./components/AntMotion/ListSort')
+      component: () => import('./routes/AntMotion/ListSort')
     },
     {
       path: '/picanim',
-      component: () => import('./components/AntMotion/PicAnim')
+      component: () => import('./routes/AntMotion/PicAnim')
     },
     {
       path: '/banneranim',
-      component: () => import('./components/AntMotion/BannerAnim')
+      component: () => import('./routes/AntMotion/BannerAnim')
     },
     {
       path: '/about',
-      component: () => import('./components/About/About')
+      component: () => import('./routes/About/About')
     }
   ]
 
@@ -297,7 +297,8 @@ const Routers = function ({ history, app }) {
             <Route exact path="/" render={() => (<Redirect to="/dashboard1" />)} />
             {
               routes.map(({ path, ...dynamics }, key) => (
-                <Route key={key}
+                <Route
+                  key={key}
                   exact
                   path={path}
                   component={dynamic({

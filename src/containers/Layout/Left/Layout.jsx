@@ -11,44 +11,44 @@ class LayoutLeftMode extends React.Component {
 
   onSwitchSidebar = () => {
     const { dispatch } = this.props;
-    dispatch({ type: 'app/switchSidebar' });
+    dispatch({ type: 'global/switchSidebar' });
   }
 
   onSwitchTheme = () => {
     const { dispatch } = this.props;
-    dispatch({ type: 'app/switchTheme' });
+    dispatch({ type: 'global/switchTheme' });
   }
 
   onMenuOpenChange = (openKeys) => {
     const { dispatch } = this.props;
-    dispatch({ type: 'app/onMenuOpenChange', payload: { siderOpenKeys: openKeys } });
+    dispatch({ type: 'global/onMenuOpenChange', payload: { siderOpenKeys: openKeys } });
   }
 
   onSwitchMenuMode = (e) => {
-    const { dispatch, app } = this.props;
+    const { dispatch, global } = this.props;
     const key = e && e.key;
     if (key === 'left' || key === 'top') {
-      dispatch({ type: 'app/switchFakeGlobal', payload: true })
+      dispatch({ type: 'global/switchFakeGlobal', payload: true })
       setTimeout(function () {
-        dispatch({ type: 'app/switchFakeGlobal', payload: false })
-        dispatch({ type: 'app/switchMenuMode', payload: key });
+        dispatch({ type: 'global/switchFakeGlobal', payload: false })
+        dispatch({ type: 'global/switchMenuMode', payload: key });
       }, 600);
     }
     // 响应式模式下调用
-    if (app && app.siderRespons) {
+    if (global && global.siderRespons) {
       this.onSwitchMenuPopover();
     }
   }
 
   onSwitchMenuPopover = () => {
     const { dispatch } = this.props;
-    dispatch({ type: 'app/switchMenuPopver' })
+    dispatch({ type: 'global/switchMenuPopver' })
   }
 
   render() {
 
-    const { app, children, location } = this.props;
-    const { siderFold, siderRespons, lightThem, menuMode, siderOpenKeys, menuResponsVisible } = app;
+    const { global, children, location } = this.props;
+    const { siderFold, siderRespons, lightThem, menuMode, siderOpenKeys, menuResponsVisible } = global;
 
     const menuProps = {
       location,

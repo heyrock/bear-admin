@@ -1,5 +1,5 @@
 export default {
-  namespace: 'app',
+  namespace: 'global',
   state: {
     // 侧边栏折叠
     siderFold: localStorage.getItem('siderFold') === 'true',
@@ -32,9 +32,9 @@ export default {
       }
     },
     * siderResponsive ({ payload }, { put, select }) {
-      const { app } = yield select(state => state);
+      const { global } = yield select(state => state);
       const isResponsive = document.body.clientWidth < 992;
-      if (isResponsive !== app.siderRespons) {
+      if (isResponsive !== global.siderRespons) {
         yield put({ type: 'switchSidebarResponsive', payload: isResponsive })
       }
     }
