@@ -10,19 +10,19 @@
 [![dva](https://img.shields.io/badge/dva-%5E2.1.0-brightgreen.svg)](https://github.com/dvajs/dva)             
 
 
-## [预览 Preview](http://huzzbuzz.coding.me/bear-admin/)
+## [預覽 Preview](http://huzzbuzz.coding.me/bear-admin/)
 
-Bear Admin，一个 JavaScript 应用，项目由业界最优秀的 React 应用开发工具 create-react-app 初始化创建， 搭配 Antd 开箱即用的高质量 React 组件和轻量级应用框架 Dva.js 一起，*非常适合后台产品*。
+Bear Admin，一個JavaScript 應用，項目由業界最優秀的React 應用開發工具create-react-app 初始化創建， 搭配Antd 開箱即用的高質量React 組件和輕量級應用框架Dva.js 一起，*非常適合後台產品*。
 
-Bear Admin 同时也是个很好的前端脚手架学习示例，如果你在学习 React 或即将学习 React，它应该可以做为教程给你一些帮助。如果你准备使用 React 全家桶开发应用，它能够快速给你提供项目脚手架，为你节省前期部分工作。 让我们一起享受整个 React 生态圈和工具链带来的愉悦开发体验。
+Bear Admin 同時也是個很好的前端腳手架學習示例，如果你在學習 React 或即將學習 React，它應該可以做為教程給你一些幫助。如果你準備使用 React 全家桶開發應用，它能夠快速給你提供項目腳手架，為你節省前期部分工作。讓我們一起享受整個 React 生態圈和工具鏈帶來的愉悅開發體驗。
 
-在开始之前，推荐先学习 React、 ES2015、Node.js、Webpack 等知识，并正确安装和配置了 Node.js 环境。
+在開始之前，推薦先學習 React、 ES2015、Node.js、Webpack 等知識，並正確安裝和配置了 Node.js 環境。
 
 <hr />
 
-#### [更新日志](./CHANGELOG.md)      
+#### [更新日誌](./CHANGELOG.md)      
 
-#### 技术栈            
+#### 技術棧            
  👍🏻[create-react-app](https://github.com/facebookincubator/create-react-app)         
  👍🏻[ant design](https://ant.design/index-cn)       
  👍🏻[dva.js](https://github.com/dvajs/dva)     
@@ -33,32 +33,32 @@ Bear Admin 同时也是个很好的前端脚手架学习示例，如果你在学
 ...       
 
 #### 特性       
- :yum:简洁的界面       
- :yum:菜单主题和布局切换       
- :yum:格栅布局，fully responsive       
- :yum:Code Splitting。开启 gzip，[首屏文件仅100多KB](https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/filesize.png)，应用载入速度超快                
- :yum:高质量脚手架                 
+ :yum:簡潔的界面       
+ :yum:菜單主題和佈局切換       
+ :yum:格柵佈局，fully responsive       
+ :yum:Code Splitting。开启 gzip，[首屏文件僅100多KB](https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/filesize.png)，應用載入速度超快                
+ :yum:高質量腳手架                 
  :yum:eject create-react-app 配置，按需定制（OR [override create-react-app webpack configs without ejecting](https://github.com/timarney/react-app-rewired)）                     
- :yum:支持更多语言特性和 polyfills，发现更多，请访问 [create-react-app](https://github.com/facebookincubator/create-react-app) 官网
+ :yum:支持更多語言特性和 polyfills，發現更多，請訪問 [create-react-app](https://github.com/facebookincubator/create-react-app) 官網
 
-#### 开始
-1. 克隆源码       
+#### 開始
+1. 克隆源碼       
 ```
 git clone https://github.com/huzzbuzz/bear-admin.git
 ```
 
-2. 安装依赖         
+2. 安裝依賴         
 ```
 cd bear-admin 
 npm i or yarn
 ```
 
-3. 调试应用         
+3. 調試應用         
 ```
 npm start
 ```
 
-4. 发布应用         
+4. 發布應用         
 ```
 npm run build
 ```
@@ -67,22 +67,22 @@ npm run build
 
 #### 更多       
 
-如何处理异步请求？       
-如何统一处理出错？            
-如何 mock 数据？       
-更多实战，请参阅：
-   - [mockjs 文档](https://github.com/nuysoft/Mock/wiki)      
-   - [dva 文档](https://github.com/dvajs/dva)     
-   - [dva 知识地图](https://github.com/dvajs/dva-knowledgemap)
-   - [create-react-app 文档](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md)   
+如何處理異步請求？       
+如何統一處理出錯？            
+如何 mock 數據？       
+更多實戰，請參閱：
+   - [mockjs 文檔](https://github.com/nuysoft/Mock/wiki)      
+   - [dva 文檔](https://github.com/dvajs/dva)     
+   - [dva 知識地圖](https://github.com/dvajs/dva-knowledgemap)
+   - [create-react-app 文檔](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md)   
    - [code splitting in create-react-app](http://serverless-stack.com/chapters/code-splitting-in-create-react-app.html)
 
-#### 致谢     
+#### 致謝     
 create-react-app      
 react 全家桶     
 antd 全家桶       
 
-:heartbeat::heartbeat: 欢迎 star 支持 :heartbeat::heartbeat: 
+:heartbeat::heartbeat: 歡迎 star 支持 :heartbeat::heartbeat: 
 
 <hr />     
 
