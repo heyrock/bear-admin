@@ -10,7 +10,7 @@
 [![dva](https://img.shields.io/badge/dva-%5E2.1.0-brightgreen.svg)](https://github.com/dvajs/dva)             
 
 
-## [預覽 Preview](http://huzzbuzz.coding.me/bear-admin/)
+## [預覽 Preview](http://d5pp9t.coding-pages.com/)
 
 Bear Admin，一個JavaScript 應用，項目由業界最優秀的React 應用開發工具create-react-app 初始化創建， 搭配Antd 開箱即用的高質量React 組件和輕量級應用框架Dva.js 一起，*非常適合後台產品*。
 
