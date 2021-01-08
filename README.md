@@ -1,4 +1,4 @@
-![](https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/logo-bear-black.jpg)                   
+![](https://github.com/jirouzizi/bear-admin/blob/master/screenshot/logo-bear-black.jpg)                   
 
 [![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/language-javascript-orange.svg)
@@ -36,7 +36,7 @@ Bear Admin 同時也是個很好的前端腳手架學習示例，如果你在學
  :yum:簡潔的界面       
  :yum:菜單主題和佈局切換       
  :yum:格柵佈局，fully responsive       
- :yum:Code Splitting。开启 gzip，[首屏文件僅100多KB](https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/filesize.png)，應用載入速度超快                
+ :yum:Code Splitting。开启 gzip，[首屏文件僅100多KB](https://github.com/jirouzizi/bear-admin/blob/master/screenshot/filesize.png)，應用載入速度超快                
  :yum:高質量腳手架                 
  :yum:eject create-react-app 配置，按需定制（OR [override create-react-app webpack configs without ejecting](https://github.com/timarney/react-app-rewired)）                     
  :yum:支持更多語言特性和 polyfills，發現更多，請訪問 [create-react-app](https://github.com/facebookincubator/create-react-app) 官網
@@ -44,7 +44,7 @@ Bear Admin 同時也是個很好的前端腳手架學習示例，如果你在學
 #### 開始
 1. 克隆源碼       
 ```
-git clone https://github.com/huzzbuzz/bear-admin.git
+git clone https://github.com/jirouzizi/bear-admin.git
 ```
 
 2. 安裝依賴         
